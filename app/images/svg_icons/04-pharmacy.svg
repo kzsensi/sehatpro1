@@ -1,0 +1,28 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ph-bottle" x1="56" y1="36" x2="56" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/><stop offset="1" stop-color="#3B6FE0"/>
+    </linearGradient>
+    <linearGradient id="ph-cap" x1="56" y1="22" x2="56" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B79BFB"/><stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="ph-pill" x1="84" y1="74" x2="104" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC58A"/><stop offset="1" stop-color="#FB8C3C"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="117" rx="34" ry="6" fill="#33415C" opacity="0.08"/>
+  <rect x="34" y="20" width="44" height="14" rx="5" fill="url(#ph-cap)"/>
+  <rect x="30" y="34" width="52" height="76" rx="14" fill="url(#ph-bottle)"/>
+  <rect x="42" y="58" width="28" height="28" rx="6" fill="#FFFFFF"/>
+  <path d="M52 62h8v8h8v8h-8v8h-8v-8h-8v-8h8z" fill="#3B6FE0"/>
+  <rect x="38" y="98" width="36" height="6" rx="3" fill="#FFFFFF" opacity="0.35"/>
+  <g>
+    <ellipse cx="94" cy="89" rx="15" ry="11" fill="url(#ph-pill)" transform="rotate(-30 94 89)"/>
+    <path d="M88 96l12-14" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" transform="rotate(-30 94 89)" opacity="0.85"/>
+    <ellipse cx="94" cy="89" rx="15" ry="11" fill="#FFFFFF" opacity="0.18" transform="rotate(-30 94 89)"/>
+  </g>
+  <circle cx="92" cy="70" r="5" fill="#DFF8F3"/>
+  <circle cx="92" cy="70" r="5" fill="#12B5A6" opacity="0.15"/>
+  <path d="M101 36v8M97 40h8" stroke="#FFC58A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="26" cy="64" r="2.2" fill="#34E0CE"/>
+</svg>

@@ -1,0 +1,94 @@
+
+{
+  "prompt_name": "PLAYFUL_HAND_DRAWN_EDITORIAL_VECTOR",
+  "version": "1.0",
+  "purpose": "Generate illustrations about any subject while preserving the distinctive playful cartoon visual style of reference image 1.",
+
+  "user_inputs": {
+    "subject": "{{SUBJECT}}",
+    "scene": "{{SCENE_DESCRIPTION}}",
+    "characters": "{{CHARACTER_DESCRIPTION}}",
+    "objects": "{{REQUIRED_OBJECTS}}",
+    "aspect_ratio": "{{ASPECT_RATIO}}"
+  },
+
+  "style_lock": {
+    "art_style": "Playful contemporary 2D cartoon editorial vector illustration with a slightly imperfect hand-drawn aesthetic.",
+    "visual_identity": "Quirky, cheerful, youthful, imaginative, expressive and visually bold.",
+    "drawing_technique": "Flat digital illustration using solid color shapes, organic hand-drawn contours and deliberately simplified cartoon anatomy.",
+    "outline_style": {
+      "color": "Deep charcoal or dark navy",
+      "weight": "Medium to bold, with occasional thinner internal details",
+      "behavior": "Slightly irregular, smooth, expressive and rounded",
+      "consistency": "Keep recognizable dark contour lines across characters and key objects."
+    },
+    "shape_language": {
+      "geometry": "Rounded rectangles, imperfect circles, smooth irregular polygons and flowing organic shapes",
+      "corners": "Mostly rounded, soft and friendly",
+      "proportions": "Intentionally exaggerated and slightly unconventional",
+      "silhouettes": "Bold, clear and easily recognizable"
+    },
+    "character_design": {
+      "anatomy": "Simplified cartoon anatomy with large heads, compact bodies and exaggerated hands or gestures",
+      "faces": "Tiny eyes, short curved noses, simple mouths, expressive eyebrows and rosy cheeks",
+      "expressions": "Friendly, amusing, animated and charming",
+      "skin": "Solid pastel skin tones with minimal shading",
+      "hair": "Large stylized silhouettes rendered with simple solid shapes",
+      "clothing": "Bold color blocks with minimal folds and details",
+      "poses": "Dynamic, playful and expressive"
+    },
+    "color_palette": {
+      "primary": [
+        "#F36B97",
+        "#B88BEA",
+        "#F6B650",
+        "#6888F3"
+      ],
+      "secondary": [
+        "#F8C9A0",
+        "#252633",
+        "#FFFFFF",
+        "#9D9FEF"
+      ],
+      "color_rules": "Use vibrant but balanced pastel colors, strong contrast between adjacent shapes and flat opaque fills. Avoid realistic gradients."
+    },
+    "composition": {
+      "layout": "Adapt to the requested scene. Support isolated illustrations, full scenes or optional multi-panel compositions.",
+      "framing": "Use playful cropping, unconventional subject placement and bold graphic groupings.",
+      "background": "Large rounded blocks of bright pastel color, simple geometric shapes or clean negative space.",
+      "spacing": "Keep distinct shapes separated and compositions visually balanced.",
+      "visual_hierarchy": "Characters and primary objects must dominate the illustration."
+    },
+    "lighting_and_shading": {
+      "lighting": "Flat, non-photographic lighting",
+      "shadows": "Minimal or absent",
+      "texture": "Mostly clean flat fills with very subtle handmade irregularities",
+      "depth": "Shape overlapping and color contrast"
+    },
+    "render_quality": {
+      "edges": "Crisp and smooth",
+      "resolution": "High resolution",
+      "finish": "Professional editorial illustration with handmade charm"
+    }
+  },
+
+  "negative_prompt": [
+    "Photorealism",
+    "3D rendering",
+    "Realistic human anatomy",
+    "Hyper-detailed faces",
+    "Anime",
+    "Glossy surfaces",
+    "Heavy gradients",
+    "Complex lighting",
+    "Strong shadows",
+    "Overly polished corporate stock art",
+    "Thin technical line art",
+    "Blurry outlines",
+    "Unnecessary text",
+    "Watermarks",
+    "Logos"
+  ],
+
+  "final_generation_instruction": "Illustrate the provided subject in the exact visual language defined above. Maintain bold hand-drawn outlines, playful cartoon proportions, rounded irregular shapes, solid pastel colors and energetic editorial composition. Adapt the scene naturally without copying the reference image's specific characters or panel arrangement. Preserve a cohesive, charming, premium 2D cartoon aesthetic regardless of the topic."
+}

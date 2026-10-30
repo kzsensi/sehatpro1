@@ -1,0 +1,105 @@
+
+{
+  "prompt_name": "SOFT_ORGANIC_LIFESTYLE_EDITORIAL_VECTOR",
+  "version": "1.0",
+  "purpose": "Generate illustrations of any subject in the warm, minimal, handcrafted editorial style of reference image 2.",
+
+  "user_inputs": {
+    "subject": "{{SUBJECT}}",
+    "scene": "{{SCENE_DESCRIPTION}}",
+    "characters": "{{CHARACTER_DESCRIPTION}}",
+    "objects": "{{REQUIRED_OBJECTS}}",
+    "aspect_ratio": "{{ASPECT_RATIO}}"
+  },
+
+  "style_lock": {
+    "art_style": "Soft contemporary 2D lifestyle editorial illustration combining simple flat vector shapes with gentle hand-drawn detailing.",
+    "visual_identity": "Warm, comforting, relaxed, wholesome, thoughtful, charming and welcoming.",
+    "drawing_technique": "Minimal digital flat illustration with flowing organic silhouettes, delicate contours, subtle decorative marks and restrained surface texture.",
+    "outline_style": {
+      "color": "Muted dark navy, warm brown or darker versions of adjacent fill colors",
+      "weight": "Thin to medium",
+      "behavior": "Soft, gently curved and slightly organic",
+      "consistency": "Use understated internal details rather than heavy black outlines."
+    },
+    "shape_language": {
+      "geometry": "Smooth organic forms, rounded silhouettes, flowing curves and soft abstract blobs",
+      "corners": "Rounded and natural",
+      "proportions": "Simplified and friendly, with gently exaggerated features",
+      "silhouettes": "Soft and approachable"
+    },
+    "character_design": {
+      "anatomy": "Stylized human proportions with rounded shoulders, simple hands and natural relaxed posture",
+      "faces": "Small expressive eyes, tiny nose, gentle smile and subtle rosy cheeks",
+      "expressions": "Calm, content, friendly and engaging",
+      "skin": "Warm flat tones with minimal blush accents",
+      "hair": "Soft flowing masses with occasional hand-drawn strands",
+      "clothing": "Simple relaxed clothing, smooth folds and large blocks of harmonious colors",
+      "poses": "Natural everyday gestures, cozy activities and quiet moments"
+    },
+    "color_palette": {
+      "primary": [
+        "#F47738",
+        "#8DBB75",
+        "#F6E8D5",
+        "#26384C"
+      ],
+      "secondary": [
+        "#F6B18B",
+        "#CFDEBD",
+        "#E65D35",
+        "#E9F1ED"
+      ],
+      "color_rules": "Use warm oranges, muted greens, cream, peach and deep navy. Keep the palette limited, harmonious and softly saturated."
+    },
+    "composition": {
+      "layout": "Usually one primary focal subject or a small cohesive group of subjects.",
+      "framing": "Centered or gently asymmetric, with generous negative space.",
+      "background": "Off-white or very pale neutral backdrop with subtle organic abstract forms.",
+      "decorative_elements": [
+        "Tiny leaves",
+        "Organic curving stems",
+        "Small stars",
+        "Simple flowers",
+        "Colored dots",
+        "Subtle floating geometric accents"
+      ],
+      "decoration_rules": "Use decorative elements sparingly and only when they complement the subject.",
+      "visual_hierarchy": "One clear central action or concept, with understated supporting detail."
+    },
+    "lighting_and_shading": {
+      "lighting": "Soft, even and non-realistic",
+      "shadows": "Extremely subtle or absent",
+      "texture": "Light paper-like grain or delicate handmade texture, never noisy",
+      "depth": "Created through overlapping flat forms and restrained color variation"
+    },
+    "render_quality": {
+      "edges": "Clean and refined with slightly organic contours",
+      "resolution": "High resolution",
+      "finish": "Premium illustrated lifestyle editorial artwork"
+    }
+  },
+
+  "negative_prompt": [
+    "Photorealism",
+    "3D rendering",
+    "Bold thick black outlines",
+    "Neon colors",
+    "Oversaturated palette",
+    "Realistic fabric textures",
+    "Excessive details",
+    "Complex architectural backgrounds",
+    "Hard shadows",
+    "Glossy shading",
+    "Metallic materials",
+    "Heavy gradients",
+    "Corporate 3D illustration",
+    "Anime style",
+    "Cluttered composition",
+    "Watermarks",
+    "Logos",
+    "Unnecessary text"
+  ],
+
+  "final_generation_instruction": "Create an original illustration of the requested subject using the defined soft organic lifestyle style. Preserve warm orange and muted green tones, delicate outlines, flowing shapes, simplified charming characters, subtle hand-drawn decorations and a spacious pale background. Adjust the characters, objects and scene as needed, but keep the same gentle visual identity. The result should look like professionally commissioned lifestyle editorial artwork."
+}

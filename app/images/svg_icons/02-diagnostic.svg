@@ -1,0 +1,30 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dg-card" x1="64" y1="20" x2="64" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF3FF"/>
+    </linearGradient>
+    <linearGradient id="dg-head" x1="40" y1="18" x2="92" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B79BFB"/><stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="dg-vial" x1="78" y1="60" x2="78" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34E0CE"/><stop offset="1" stop-color="#12B5A6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="117" rx="34" ry="6" fill="#33415C" opacity="0.08"/>
+  <rect x="26" y="14" width="62" height="92" rx="12" fill="url(#dg-card)"/>
+  <path d="M26 26a12 12 0 0 1 12-12h38a12 12 0 0 1 12 12v6H26z" fill="url(#dg-head)"/>
+  <circle cx="40" cy="23" r="4" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M52 23h22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <path d="M37 56l8 0 5-12 7 22 5-10 5 0" stroke="#FB6F86" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="37" y="74" width="30" height="4" rx="2" fill="#CFE0FF"/>
+  <rect x="37" y="84" width="20" height="4" rx="2" fill="#CFE0FF"/>
+  <g>
+    <path d="M70 50h16v6l-2 4v40a10 10 0 0 1-20 0V60l-2-4v-6h8z" fill="#DFF8F3"/>
+    <path d="M68 78v22a8 8 0 0 0 16 0V78z" fill="url(#dg-vial)"/>
+    <rect x="66" y="48" width="24" height="6" rx="3" fill="#9FE8DD"/>
+    <circle cx="74" cy="90" r="2.4" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="80" cy="98" r="1.8" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+  <path d="M99 36v8M95 40h8" stroke="#FFC58A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="100" cy="84" r="2.2" fill="#6EA8FE"/>
+</svg>

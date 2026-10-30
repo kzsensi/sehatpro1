@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Ram Yadav",
+    "review": "Health plans mujhe pehle complicated lagte the, lekin Sehatfirstpro simple aur clear hai. Family ke liye kaafi useful laga.",
+    "image": "/assets/images/testimonial1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Akshay Sinha",
+    "review": "Busy lifestyles can make it difficult to prioritize health. These plan helps me stay on top of my well-being",
+    "image": "/assets/images/male.png"
+  },
+  {
+    "id": 3,
+    "name": "Ajay Pal",
+    "review": "Choti health problems ke liye bade bills ka tension tha.Sehatfirstpro ne healthcare ko affordable bana diya.",
+    "image": "/assets/images/testimonial3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sunidhi Shah",
+    "review": "Small health concerns often came with the worry of large medical bills. Sehatfirstpro has made healthcare more affordable and accessible",
+    "image": "/assets/images/testimonial2.jpg"
+  }
+]

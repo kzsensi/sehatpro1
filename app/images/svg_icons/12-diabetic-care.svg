@@ -1,0 +1,26 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="db-meter" x1="56" y1="20" x2="56" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/><stop offset="1" stop-color="#3B6FE0"/>
+    </linearGradient>
+    <linearGradient id="db-drop" x1="92" y1="42" x2="92" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9AAE"/><stop offset="1" stop-color="#FB6F86"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="58" cy="117" rx="34" ry="6" fill="#33415C" opacity="0.08"/>
+  <rect x="30" y="18" width="52" height="92" rx="14" fill="url(#db-meter)"/>
+  <rect x="38" y="28" width="36" height="34" rx="8" fill="#EAF2FF"/>
+  <path d="M44 52l6-12 4 8 4-14 5 18" stroke="#12B5A6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="44" cy="76" r="4.5"/><circle cx="56" cy="76" r="4.5"/><circle cx="68" cy="76" r="4.5"/>
+    <circle cx="44" cy="90" r="4.5"/><circle cx="56" cy="90" r="4.5"/><circle cx="68" cy="90" r="4.5"/>
+  </g>
+  <!-- test strip -->
+  <rect x="48" y="6" width="16" height="16" rx="3" fill="#FFFFFF"/>
+  <rect x="53" y="6" width="6" height="16" fill="#FFC58A"/>
+  <!-- blood drop -->
+  <path d="M92 42c-7 9-12 15-12 22a12 12 0 0 0 24 0c0-7-5-13-12-22z" fill="url(#db-drop)"/>
+  <ellipse cx="88" cy="62" rx="3" ry="4" fill="#FFFFFF" opacity="0.5"/>
+  <path d="M104 90v8M100 94h8" stroke="#FFC58A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="100" cy="34" r="2.2" fill="#34E0CE"/>
+</svg>

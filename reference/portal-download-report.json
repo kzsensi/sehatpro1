@@ -1,0 +1,556 @@
+{
+  "customer": [
+    [
+      "app/asset-manifest.json",
+      true,
+      331
+    ],
+    [
+      "app/favicon.png",
+      true,
+      633
+    ],
+    [
+      "app/index.html",
+      true,
+      1572
+    ],
+    [
+      "app/js/tailwind.config.js",
+      true,
+      1090
+    ],
+    [
+      "app/manifest.json",
+      true,
+      492
+    ],
+    [
+      "app/static/css/main.7b825d30.css",
+      true,
+      53059
+    ],
+    [
+      "app/static/js/206.267180bc.chunk.js",
+      true,
+      4398
+    ],
+    [
+      "app/static/js/main.80a280cc.js",
+      true,
+      7937794
+    ],
+    [
+      "login.html",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "src/assets/css/style.css",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "app/images/abdm1.png",
+      true,
+      3886
+    ],
+    [
+      "app/images/abha-1.png",
+      true,
+      28768
+    ],
+    [
+      "app/images/appointment1.svg",
+      true,
+      4770
+    ],
+    [
+      "app/images/bellReminder.png",
+      true,
+      20068
+    ],
+    [
+      "app/images/chevron-left.svg",
+      true,
+      225
+    ],
+    [
+      "app/images/close.svg",
+      true,
+      307
+    ],
+    [
+      "app/images/cnsult.jpg",
+      true,
+      462904
+    ],
+    [
+      "app/images/default.svg",
+      true,
+      12245
+    ],
+    [
+      "app/images/defaultDoctor.jpg",
+      true,
+      20720
+    ],
+    [
+      "app/images/defaultProvider.webp",
+      true,
+      13962
+    ],
+    [
+      "app/images/dot.svg",
+      true,
+      155
+    ],
+    [
+      "app/images/facevital2.jpg",
+      true,
+      262204
+    ],
+    [
+      "app/images/icons/calender.svg",
+      true,
+      1650
+    ],
+    [
+      "app/images/icons/file.svg",
+      true,
+      1047
+    ],
+    [
+      "app/images/icons/link.svg",
+      true,
+      1741
+    ],
+    [
+      "app/images/icons/user.svg",
+      true,
+      2271
+    ],
+    [
+      "app/images/icons/view.svg",
+      true,
+      847
+    ],
+    [
+      "app/images/inactive.jpg",
+      true,
+      356404
+    ],
+    [
+      "app/images/lock.svg",
+      true,
+      605
+    ],
+    [
+      "app/images/medical.jpg",
+      true,
+      70822
+    ],
+    [
+      "app/images/medicine1.svg",
+      true,
+      1844
+    ],
+    [
+      "app/images/nha.svg",
+      true,
+      290337
+    ],
+    [
+      "app/images/notfound.svg",
+      true,
+      53352
+    ],
+    [
+      "app/images/outline.svg",
+      true,
+      322
+    ],
+    [
+      "app/images/profile-female.png",
+      true,
+      8819
+    ],
+    [
+      "app/images/profile-male.png",
+      true,
+      8836
+    ],
+    [
+      "app/images/schedule.svg",
+      true,
+      6888
+    ],
+    [
+      "app/images/success.svg",
+      true,
+      4104
+    ],
+    [
+      "app/images/upload-down.svg",
+      true,
+      64001
+    ],
+    [
+      "app/images/upper.svg",
+      true,
+      8130
+    ],
+    [
+      "app/images/walk1.svg",
+      true,
+      6880
+    ],
+    [
+      "app/images/water1.svg",
+      true,
+      2660
+    ],
+    [
+      "app/images/yoga2.jpg",
+      true,
+      448961
+    ]
+  ],
+  "agent": [
+    [
+      "favicon.png",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "index.html",
+      true,
+      3842
+    ],
+    [
+      "main.1df99b2d62752885b099.js",
+      true,
+      18502
+    ],
+    [
+      "remoteEntry.js",
+      true,
+      15735
+    ],
+    [
+      "105.5b451a06e210f08b1ec5.js",
+      true,
+      3882881
+    ],
+    [
+      "166.06e069a1be12e5470c41.js",
+      true,
+      45689
+    ],
+    [
+      "364.bb2fdcda0a602f46be28.js",
+      true,
+      4473
+    ],
+    [
+      "405.4dc35a2aa43dd25aed8e.js",
+      true,
+      6867227
+    ],
+    [
+      "418.6e2b3a6b74ad8e106e74.js",
+      true,
+      22727
+    ],
+    [
+      "540.7a2219b1e718da5c1656.js",
+      true,
+      6540
+    ],
+    [
+      "578.2b32500df948d60efec1.js",
+      true,
+      904
+    ],
+    [
+      "71.fec8b7027779b2a466d3.js",
+      true,
+      213152
+    ],
+    [
+      "780.d8414335830b2c3b64d0.js",
+      true,
+      155729
+    ],
+    [
+      "907.f4d54f3fdbe617e84079.js",
+      true,
+      4500
+    ],
+    [
+      "961.3cc4ca7db81e00e0cc7d.js",
+      true,
+      132522
+    ],
+    [
+      "assets/js/appear.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/bootstrap.min.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/bxslider.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/gsap-scroll-smoother.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/gsap-scroll-to-plugin.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/gsap-scroll-trigger.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/gsap-split-text.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/gsap.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/jquery-ui.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/jquery.fancybox.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/knob.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/mixitup.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/nice-select.min.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/parallaxie.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/popper.min.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/script.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/split-type.min.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/swiper.min.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "assets/js/wow.js",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/Avatar.png",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/Search.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/age1.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/ageIcon.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/autosignup.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/backarrow.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/benfits.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/calender.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/cusemail.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/default.png",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/dots-grid.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/downsolid.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/envelope.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/eyeOff.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/eyeOn.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/flower2.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/gender-male-female.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/headerLogo.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/inactive.jpg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/info-icon.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/list-status.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/logo.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/noList.png",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/payment.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/phone1.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/pound.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/puzzle.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/secondArr.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/sehatlogo.png",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/test1.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/time.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/user-location.svg",
+      false,
+      "SPA fallback"
+    ],
+    [
+      "images/user.svg",
+      false,
+      "SPA fallback"
+    ]
+  ]
+}

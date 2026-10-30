@@ -1,0 +1,12 @@
+{
+  "name": "sehatfirstpro-current-site-reference",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local reference copy of Sehat First Pro's public front ends",
+  "scripts": {
+    "dev": "python tools/serve.py",
+    "start": "python tools/serve.py",
+    "redesign": "npm --prefix redesign run dev",
+    "build:redesign": "npm --prefix redesign run build"
+  }
+}

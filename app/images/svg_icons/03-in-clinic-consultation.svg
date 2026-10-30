@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ic-coat" x1="40" y1="46" x2="40" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34E0CE"/><stop offset="1" stop-color="#12B5A6"/>
+    </linearGradient>
+    <linearGradient id="ic-pat" x1="88" y1="50" x2="88" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC58A"/><stop offset="1" stop-color="#FB8C3C"/>
+    </linearGradient>
+    <linearGradient id="ic-desk" x1="64" y1="92" x2="64" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/><stop offset="1" stop-color="#3B6FE0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="116" rx="40" ry="6" fill="#33415C" opacity="0.08"/>
+  <rect x="20" y="14" width="88" height="74" rx="14" fill="#EEF3FF"/>
+  <circle cx="64" cy="30" r="9" fill="#FFFFFF"/>
+  <path d="M60 26h3v4h4v3h-4v4h-3v-4h-4v-3h4z" fill="#FB6F86"/>
+  <!-- doctor -->
+  <circle cx="40" cy="50" r="10" fill="#F4C9A3"/>
+  <path d="M30 49c0-7 4-11 10-11s10 4 10 11c0-2-4-4-10-4s-10 2-10 4z" fill="#34415C"/>
+  <path d="M24 96V82c0-9 7-16 16-16s16 7 16 16v14z" fill="url(#ic-coat)"/>
+  <path d="M35 67l5 7 5-7c-3 1.6-7 1.6-10 0z" fill="#FFFFFF"/>
+  <!-- patient -->
+  <circle cx="88" cy="54" r="9" fill="#F4C9A3"/>
+  <path d="M79 53c0-6 4-10 9-10s9 4 9 10c0-2-3-4-9-4s-9 2-9 4z" fill="#6B4A33"/>
+  <path d="M74 96V84c0-8 6-14 14-14s14 6 14 14v12z" fill="url(#ic-pat)"/>
+  <!-- desk -->
+  <rect x="14" y="94" width="100" height="12" rx="6" fill="url(#ic-desk)"/>
+  <rect x="50" y="86" width="16" height="10" rx="2" fill="#FFFFFF"/>
+  <path d="M52 90h12" stroke="#6EA8FE" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M111 30v8M107 34h8" stroke="#FFC58A" stroke-width="2" stroke-linecap="round"/>
+</svg>

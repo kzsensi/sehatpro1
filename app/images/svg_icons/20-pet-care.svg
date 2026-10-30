@@ -1,0 +1,37 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pc-head" x1="60" y1="30" x2="60" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC58A"/><stop offset="1" stop-color="#FB8C3C"/>
+    </linearGradient>
+    <linearGradient id="pc-ear" x1="32" y1="24" x2="32" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB8C3C"/><stop offset="1" stop-color="#E8741F"/>
+    </linearGradient>
+    <linearGradient id="pc-paw" x1="96" y1="74" x2="96" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34E0CE"/><stop offset="1" stop-color="#12B5A6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="116" rx="34" ry="6" fill="#33415C" opacity="0.08"/>
+  <circle cx="60" cy="60" r="42" fill="#FFE8D2"/>
+  <!-- ears -->
+  <path d="M30 28c-6 4-8 14-4 26 8-2 13-8 14-18 0-6-4-11-10-8z" fill="url(#pc-ear)"/>
+  <path d="M90 28c6 4 8 14 4 26-8-2-13-8-14-18 0-6 4-11 10-8z" fill="url(#pc-ear)"/>
+  <!-- head -->
+  <path d="M60 36c16 0 28 12 28 28 0 18-14 30-28 30S32 82 32 64c0-16 12-28 28-28z" fill="url(#pc-head)"/>
+  <!-- eyes -->
+  <circle cx="50" cy="60" r="3.4" fill="#34415C"/>
+  <circle cx="70" cy="60" r="3.4" fill="#34415C"/>
+  <circle cx="51" cy="59" r="1.1" fill="#FFFFFF"/>
+  <circle cx="71" cy="59" r="1.1" fill="#FFFFFF"/>
+  <!-- muzzle -->
+  <ellipse cx="60" cy="76" rx="14" ry="11" fill="#FFF1E2"/>
+  <path d="M55 72h10l-5 5z" fill="#34415C"/>
+  <path d="M60 77v6M60 83c-2 3-6 2-7-1M60 83c2 3 6 2 7-1" stroke="#C97E52" stroke-width="2" stroke-linecap="round"/>
+  <!-- collar + medical tag -->
+  <path d="M40 90c6 5 14 7 20 7s14-2 20-7" stroke="#6EA8FE" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="60" cy="100" r="9" fill="url(#pc-paw)"/>
+  <path d="M58 95h4v3h3v4h-3v3h-4v-3h-3v-4h3z" fill="#FFFFFF"/>
+  <!-- accents -->
+  <path d="M98 36v8M94 40h8" stroke="#FFC58A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="24" cy="48" r="2.4" fill="#B79BFB"/>
+  <circle cx="100" cy="80" r="2.2" fill="#FF9AAE"/>
+</svg>

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Tele Consultation",
+    "description": "Connect with doctors anytime, anywhere.",
+    "image": "/assets/images/tele-consultation.png",
+    "size": "large"
+  },
+  {
+    "title": "Diagnostics",
+    "description": "Health checkups and lab tests.",
+    "image": "/assets/images/diagnostic.png"
+  },
+  {
+    "title": "Consultation",
+    "description": "Meet specialists for expert care.",
+    "image": "/assets/images/inclinic-consultation.png"
+  },
+  {
+    "title": "Mental Wellness",
+    "description": "Professional support for mental health.",
+    "image": "/assets/images/mental-well-ness.jpg"
+  },
+  {
+    "title": "Vitals via Face Scan",
+    "description": "AI-powered instant vital tracking.",
+    "image": "/assets/images/face-scan.png"
+  },
+  {
+    "title": "Video Consultation",
+    "description": "Consult doctors through secure video calls.",
+    "image": "/assets/images/video-con.jpg",
+    "size": "wide"
+  },
+  {
+    "title": "Chat With Experts",
+    "description": "Instant guidance from professionals.",
+    "image": "/assets/images/chat.png"
+  },
+  {
+    "title": "Naturopathy",
+    "description": "Natural healing and wellness solutions.",
+    "image": "/assets/images/Naturopathy.jpg"
+  }
+]

@@ -1,0 +1,108 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main card — deep blue -->
+    <linearGradient id="sc-card" x1="38" y1="14" x2="38" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/><stop offset="1" stop-color="#3B6FE0"/>
+    </linearGradient>
+    <!-- Scanner ring gradient — purple -->
+    <linearGradient id="sc-ring" x1="64" y1="30" x2="64" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B0FF"/><stop offset="1" stop-color="#7C5CEA"/>
+    </linearGradient>
+    <!-- Scan beam glow -->
+    <linearGradient id="sc-beam-h" x1="30" y1="0" x2="98" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34E0CE" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#34E0CE"/>
+      <stop offset="0.65" stop-color="#34E0CE"/>
+      <stop offset="1" stop-color="#34E0CE" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Table / bed gradient -->
+    <linearGradient id="sc-bed" x1="64" y1="80" x2="64" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B79BFB"/><stop offset="1" stop-color="#7C5CEA"/>
+    </linearGradient>
+    <!-- Body silhouette fill -->
+    <linearGradient id="sc-body" x1="64" y1="35" x2="64" y2="75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF2FF"/><stop offset="1" stop-color="#C9D9FF"/>
+    </linearGradient>
+    <!-- Wave lines on scan results -->
+    <linearGradient id="sc-wave" x1="8" y1="0" x2="56" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12B5A6"/><stop offset="1" stop-color="#34E0CE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="62" cy="118" rx="38" ry="5.5" fill="#33415C" opacity="0.09"/>
+
+  <!-- ── MAIN CARD ── -->
+  <rect x="10" y="14" width="80" height="96" rx="16" fill="url(#sc-card)"/>
+  <!-- Top highlight rim -->
+  <rect x="10" y="14" width="80" height="28" rx="16" fill="#FFFFFF" opacity="0.10"/>
+
+  <!-- ── SCANNER RING (MRI/CT tube) ── -->
+  <!-- Outer ring -->
+  <ellipse cx="50" cy="55" rx="28" ry="30" fill="none" stroke="url(#sc-ring)" stroke-width="9"/>
+  <!-- Ring sheen -->
+  <ellipse cx="50" cy="55" rx="28" ry="30" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="28 60" opacity="0.25"/>
+  <!-- Inner ring dark border -->
+  <ellipse cx="50" cy="55" rx="19" ry="21" fill="#1B3A7A" opacity="0.35"/>
+  <!-- Inner ring fill — screen -->
+  <ellipse cx="50" cy="55" rx="17" ry="19" fill="#0F2554"/>
+
+  <!-- ── HUMAN BODY silhouette inside ring ── -->
+  <!-- head -->
+  <circle cx="50" cy="37" r="5.5" fill="url(#sc-body)" opacity="0.9"/>
+  <!-- torso -->
+  <rect x="44" y="43" width="12" height="17" rx="4" fill="url(#sc-body)" opacity="0.9"/>
+  <!-- legs -->
+  <rect x="44" y="59" width="5" height="12" rx="2.5" fill="url(#sc-body)" opacity="0.85"/>
+  <rect x="51" y="59" width="5" height="12" rx="2.5" fill="url(#sc-body)" opacity="0.85"/>
+
+  <!-- Scan beam line (horizontal sweep) -->
+  <rect x="22" y="52" width="56" height="6" rx="3" fill="url(#sc-beam-h)" opacity="0.55"/>
+  <rect x="22" y="54" width="56" height="2" rx="1" fill="#34E0CE" opacity="0.95"/>
+
+  <!-- ── SCANNER BED / TABLE ── -->
+  <rect x="32" y="80" width="36" height="7" rx="3.5" fill="url(#sc-bed)"/>
+  <!-- Bed leg -->
+  <rect x="46" y="87" width="8" height="10" rx="3" fill="#5B4BB0"/>
+
+  <!-- ── RESULT PANEL (bottom of card) ── -->
+  <rect x="20" y="100" width="60" height="2.5" rx="1.5" fill="#FFFFFF" opacity="0.18"/>
+  <rect x="20" y="105" width="40" height="2.5" rx="1.5" fill="#FFFFFF" opacity="0.12"/>
+
+  <!-- ── FLOATING RESULT BADGE (right side) ── -->
+  <rect x="78" y="24" width="42" height="62" rx="13" fill="#FFFFFF"/>
+  <!-- Badge shadow -->
+  <rect x="78" y="24" width="42" height="62" rx="13" fill="#3B6FE0" opacity="0.06"/>
+
+  <!-- Scan wave lines inside badge -->
+  <!-- Line 1 label dot -->
+  <circle cx="87" cy="38" r="3" fill="#6EA8FE"/>
+  <!-- Wave 1 -->
+  <path d="M93 38 L97 38 L99 33 L101 43 L103 36 L105 41 L107 38 L112 38"
+        stroke="#6EA8FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Line 2 label dot -->
+  <circle cx="87" cy="52" r="3" fill="#34E0CE"/>
+  <!-- Wave 2 -->
+  <path d="M93 52 L96 52 L98 47 L100 57 L102 49 L104 55 L107 52 L112 52"
+        stroke="#34E0CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Line 3 label dot -->
+  <circle cx="87" cy="66" r="3" fill="#B79BFB"/>
+  <!-- Wave 3 -->
+  <path d="M93 66 L95 66 L97 62 L100 70 L102 64 L105 68 L108 66 L112 66"
+        stroke="#B79BFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Badge divider -->
+  <rect x="82" y="76" width="34" height="1.5" rx="0.75" fill="#E5ECF8"/>
+  <!-- Badge result label pills -->
+  <rect x="82" y="79" width="16" height="5" rx="2.5" fill="#EAF2FF"/>
+  <rect x="100" y="79" width="16" height="5" rx="2.5" fill="#F0FBF8"/>
+
+  <!-- Decorative sparkle cross -->
+  <path d="M110 96v8M106 100h8" stroke="#FFC58A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Teal accent dot -->
+  <circle cx="11" cy="112" r="2.4" fill="#34E0CE"/>
+  <!-- Small dot top right of badge -->
+  <circle cx="116" cy="22" r="2" fill="#34E0CE"/>
+</svg>

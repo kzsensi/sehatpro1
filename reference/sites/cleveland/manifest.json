@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://my.clevelandclinic.org/",
+    "file": "index.html",
+    "bytes": 301070
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/css/b1150352d9a710e2.css",
+    "file": "asset-0.css",
+    "bytes": 93049
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/css/7bbdddb45f476a61.css",
+    "file": "asset-1.css",
+    "bytes": 22518
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/webpack-7433bd3477a2067f.js",
+    "file": "asset-2.js",
+    "bytes": 3796
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/7a40b82e-1aace76973218b20.js",
+    "file": "asset-3.js",
+    "bytes": 173025
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/5085-7b6ef4958e4e776b.js",
+    "file": "asset-4.js",
+    "bytes": 173796
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/main-app-83b37d493c4c0a50.js",
+    "file": "asset-5.js",
+    "bytes": 843
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/8695-5b505ebfc099da36.js",
+    "file": "asset-6.js",
+    "bytes": 28954
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/6238-b2f458cddea893c1.js",
+    "file": "asset-7.js",
+    "bytes": 112901
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/8416-af9174389cd8237c.js",
+    "file": "asset-8.js",
+    "bytes": 180653
+  },
+  {
+    "url": "https://my.clevelandclinic.org/_next/static/chunks/9565-ff8789ee62b02f11.js",
+    "file": "asset-9.js",
+    "bytes": 8879
+  }
+]

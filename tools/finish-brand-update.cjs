@@ -1,0 +1,16 @@
+const fs=require('fs');const root=require('path').resolve(__dirname,'..');const read=p=>fs.readFileSync(root+'/'+p,'utf8');const write=(p,s)=>fs.writeFileSync(root+'/'+p,s);
+let app=read('redesign/src/App.jsx');
+app=app.replace("import LazyLottie from './components/LazyLottie';","import LazyLottie from './components/LazyLottie';\nimport SpotlightCard from './components/SpotlightCard';\nimport ScrollReveal from './components/ScrollText';");
+app=app.replace('<h2>Make everyday healthcare<br/>easier to manage.</h2>', '<ScrollReveal enableBlur={false} baseOpacity={0.55} baseRotation={0} containerClassName="brand-statement">Make everyday healthcare easier to manage.</ScrollReveal>');
+app=app.replace("<article className={'plan-card '+(p.planCode==='wellnessessential'?'featured':'')} key={p.id}>","<SpotlightCard role=\"article\" theme=\"light\" spotlightColor=\"#123b7c\" intensity={0.12} borderGlow={0.35} proximity={0} flare={false} className={'plan-card '+(p.planCode==='wellnessessential'?'featured':'')} key={p.id}>");
+app=app.replace('View full plan <A/></a></article>)','View full plan <A/></a></SpotlightCard>)');
+write('redesign/src/App.jsx',app);
+let spot=read('redesign/src/components/SpotlightCard.jsx');
+spot=spot.replace("    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;","    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;\n    if (reduce || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return undefined;");
+write('redesign/src/components/SpotlightCard.jsx',spot);
+let lottie=JSON.parse(read('redesign/public/animations/heart-medical.json'));
+function colors(x){if(!x||typeof x!=='object')return;if(x.c&&x.c.k&&Array.isArray(x.c.k)&&typeof x.c.k[0]==='number'){x.c.k=x.ty==='st'?[0.07,0.23,0.49,1]:[0.086,0.64,0.29,1]}for(const value of Object.values(x))if(typeof value==='object')colors(value)}colors(lottie);write('redesign/public/animations/heart-medical.json',JSON.stringify(lottie));
+let lazy=read('redesign/src/components/LazyLottie.jsx').replace("import('lottie-web')","import('lottie-web/build/player/lottie_light')").replaceAll('#eb784d','#16a34a').replaceAll('#203c35','#123b7c');write('redesign/src/components/LazyLottie.jsx',lazy);
+let html=read('redesign/index.html').replace(/<title>[\s\S]*?<\/title>/,'<title>SehatFirstPro | OPD & wellness memberships</title>').replace(/<link rel="preconnect"[^>]*\/>/g,'').replace(/<link href="https:\/\/fonts.googleapis.com[^>]*\/>/g,'').replace('#f6f3e9','#123B7C');write('redesign/index.html',html);
+let pkg=JSON.parse(read('package.json'));pkg.scripts.redesign='npm --prefix redesign run dev';pkg.scripts['build:redesign']='npm --prefix redesign run build';write('package.json',JSON.stringify(pkg,null,2));
+console.log('Integrated actual SpotlightCard, ScrollReveal, blue/green Lottie and root startup commands.');

@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://www.atlantichealth.org/home",
+    "file": "index.html",
+    "bytes": 200539
+  },
+  {
+    "url": "https://www.atlantichealth.org/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "file": "asset-0.js",
+    "bytes": 552
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-base.lc-3c3f5dd55b9ba40f3a512eeabe9e111c-lc.min.css",
+    "file": "asset-1.css",
+    "bytes": 108906
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react.lc-405cb2710d847b86f6e80fae00482f84-lc.min.css",
+    "file": "asset-2.css",
+    "bytes": 258561
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react/resources/static/js/2471.32a0a761.chunk.js",
+    "file": "asset-4.js",
+    "bytes": 58134
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react/resources/static/js/8485.68a51e97.chunk.js",
+    "file": "asset-5.js",
+    "bytes": 121536
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react/resources/static/js/5398.422814de.chunk.js",
+    "file": "asset-6.js",
+    "bytes": 26991
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react/resources/static/js/5462.a6502516.chunk.js",
+    "file": "asset-7.js",
+    "bytes": 417363
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react/resources/static/js/1359.240b7cc4.chunk.js",
+    "file": "asset-8.js",
+    "bytes": 48681
+  },
+  {
+    "url": "https://www.atlantichealth.org/etc.clientlibs/ahs/clientlibs/clientlib-react/resources/static/js/9444.9a74c766.chunk.js",
+    "file": "asset-9.js",
+    "bytes": 42592
+  }
+]

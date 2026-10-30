@@ -1,0 +1,106 @@
+
+{
+  "prompt_name": "PROFESSIONAL_MODERN_FLAT_VECTOR_SCENE",
+  "version": "1.0",
+  "purpose": "Generate illustrations for any industry or subject while maintaining the sophisticated, environment-rich flat vector editorial style of reference image 3.",
+
+  "user_inputs": {
+    "subject": "{{SUBJECT}}",
+    "scene": "{{SCENE_DESCRIPTION}}",
+    "characters": "{{CHARACTER_DESCRIPTION}}",
+    "environment": "{{LOCATION_OR_SETTING}}",
+    "objects": "{{REQUIRED_OBJECTS}}",
+    "aspect_ratio": "{{ASPECT_RATIO}}"
+  },
+
+  "style_lock": {
+    "art_style": "Professional contemporary 2D flat vector editorial scene illustration with stylized human figures, refined linework and geometric environmental details.",
+    "visual_identity": "Modern, sophisticated, informative, calm, trustworthy and thoughtfully composed.",
+    "drawing_technique": "Crisp flat digital vector shapes combined with thin contour lines, layered planes, simplified perspective and restrained tonal shading.",
+    "outline_style": {
+      "color": "Dark slate, muted navy or complementary darker tones",
+      "weight": "Thin and controlled",
+      "behavior": "Mostly smooth, precise and consistent with occasional expressive curves",
+      "consistency": "Use subtle internal contour details to define clothing folds, anatomy and objects."
+    },
+    "shape_language": {
+      "geometry": "Combination of simplified natural human silhouettes, angular furniture, geometric architecture and soft abstract background forms",
+      "corners": "Mix smooth character curves with structured environmental edges",
+      "proportions": "Stylized but believable",
+      "silhouettes": "Clear, elegant and well balanced"
+    },
+    "character_design": {
+      "anatomy": "Semi-realistic vector human proportions with elongated limbs, simplified hands and natural seated or standing posture",
+      "faces": "Minimal facial features, compact eyes, understated noses and simplified expressions",
+      "expressions": "Natural, subtle and appropriate to the context",
+      "skin": "Solid warm skin tones with restrained tonal variation",
+      "hair": "Flat dark shapes with subtle highlight bands or simplified strands",
+      "clothing": "Recognizable garments defined through large color areas, angular folds and thin contour lines",
+      "poses": "Believable interactions with clear body language and purposeful hand gestures",
+      "interaction": "Characters should meaningfully engage with each other or with relevant objects."
+    },
+    "color_palette": {
+      "primary": [
+        "#C66559",
+        "#F2A08D",
+        "#315C54",
+        "#353D51"
+      ],
+      "secondary": [
+        "#A8B8B2",
+        "#DADBDD",
+        "#F4F5F6",
+        "#B4A58D",
+        "#FFFFFF"
+      ],
+      "color_rules": "Favor muted terracotta, dusty peach, sage green, dark teal, warm gray, beige and slate. Use colors in deliberate, balanced blocks."
+    },
+    "composition": {
+      "layout": "Structured editorial scene with a clear foreground, midground and simplified background.",
+      "framing": "Wide or medium framing that gives sufficient room to characters, interactions and contextual objects.",
+      "background": "Minimal but recognizable environment with geometric walls, furniture, windows, fixtures or location-appropriate details.",
+      "environmental_details": "Use simplified architectural lines, small objects and relevant equipment to establish the scene without excessive complexity.",
+      "abstract_elements": "Large soft gray or muted organic background shapes may frame the illustration.",
+      "floor": "Optional subtle perspective lines or geometric floor tiles.",
+      "visual_hierarchy": "The primary human interaction or important object must remain dominant.",
+      "negative_space": "Keep controlled breathing room around the subjects and frame."
+    },
+    "lighting_and_shading": {
+      "lighting": "Even ambient editorial lighting with no realistic light sources",
+      "shadows": "Restrained flat shadow shapes and muted tonal overlays",
+      "texture": "Smooth clean fills, almost no grain",
+      "depth": "Created through geometric overlap, subtle tonal differences and simplified perspective",
+      "highlights": "Small controlled flat-color highlights rather than glossy effects"
+    },
+    "render_quality": {
+      "edges": "Sharp and precise",
+      "resolution": "High resolution",
+      "finish": "Polished professional vector illustration suitable for digital products, websites, publications and presentations"
+    }
+  },
+
+  "negative_prompt": [
+    "Photorealism",
+    "3D rendering",
+    "Clay illustration",
+    "Glossy gradients",
+    "Hyperrealistic anatomy",
+    "Exaggerated cartoon heads",
+    "Thick black comic outlines",
+    "Neon color palette",
+    "Overly saturated colors",
+    "Dramatic cinematic lighting",
+    "Strong volumetric shadows",
+    "Extremely detailed backgrounds",
+    "Realistic textures",
+    "Anime",
+    "Unnatural human poses",
+    "Distorted hands",
+    "Crowded compositions",
+    "Watermarks",
+    "Logos",
+    "Unnecessary text"
+  ],
+
+  "final_generation_instruction": "Produce an original high-quality modern flat vector illustration of the requested subject and environment. Maintain refined thin contours, stylized believable human anatomy, muted professional colors, layered geometric scene construction and subtle flat shading. Use detailed but simplified contextual objects to clearly communicate the concept. Keep the illustration crisp, cohesive and sophisticated, matching the professional editorial visual identity described above regardless of the requested topic."
+}

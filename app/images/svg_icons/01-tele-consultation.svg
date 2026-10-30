@@ -1,0 +1,30 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tc-phone" x1="64" y1="14" x2="64" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/><stop offset="1" stop-color="#3B6FE0"/>
+    </linearGradient>
+    <linearGradient id="tc-screen" x1="64" y1="24" x2="64" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF2FF"/><stop offset="1" stop-color="#D4E6FF"/>
+    </linearGradient>
+    <linearGradient id="tc-coat" x1="64" y1="70" x2="64" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34E0CE"/><stop offset="1" stop-color="#12B5A6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="117" rx="33" ry="6" fill="#33415C" opacity="0.08"/>
+  <rect x="38" y="12" width="52" height="104" rx="15" fill="url(#tc-phone)"/>
+  <rect x="44" y="22" width="40" height="84" rx="9" fill="url(#tc-screen)"/>
+  <circle cx="84" cy="14" r="3" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="64" cy="49" r="13" fill="#F4C9A3"/>
+  <path d="M51 47c0-9 6-15 13-15s13 6 13 15c0-3-4-6-13-6s-13 3-13 6z" fill="#34415C"/>
+  <path d="M44 106v-6c0-12 9-20 20-20s20 8 20 20v6z" fill="url(#tc-coat)"/>
+  <path d="M58 80l6 8 6-8c-3 2-9 2-12 0z" fill="#FFFFFF"/>
+  <circle cx="64" cy="96" r="3.5" fill="#FFFFFF"/>
+  <circle cx="48" cy="96" r="5" fill="#12B981"/>
+  <path d="M45.6 96l1.7 1.7 3-3.2" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#FFC58A">
+    <circle cx="100" cy="34" r="3.5"/>
+  </g>
+  <path d="M99 30v8M95 34h8" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="28" cy="60" r="2.4" fill="#B79BFB"/>
+  <circle cx="104" cy="86" r="2" fill="#34E0CE"/>
+</svg>

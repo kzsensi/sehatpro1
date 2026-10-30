@@ -1,0 +1,3 @@
+export const SHOW_SNACKBAR = "SHOW_SNACKBAR";
+export const IS_LOADING = "IS_LOADING";
+export const IS_PAGELOADING = "IS_PAGELOADING";

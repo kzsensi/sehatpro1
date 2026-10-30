@@ -1,0 +1,5 @@
+.magnetic{vertical-align:middle;max-width:100%}
+.care-cursor{position:fixed;left:0;top:0;width:14px;height:14px;margin:-7px 0 0 -7px;z-index:9999;pointer-events:none;border:1px solid #d95b31;border-radius:50%;opacity:0;color:#263d32;font:600 10px/1 sans-serif;display:flex;align-items:center;justify-content:center;transition:width .25s,height .25s,margin .25s,background .25s,opacity .2s;will-change:transform}
+.care-cursor[data-visible=true]{opacity:.75}
+.care-cursor[data-active=true]{width:48px;height:48px;margin:-24px 0 0 -24px;background:#e8793c18;border-color:#d95b3170}
+@media (hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.care-cursor{display:none}.magnetic>div{transform:none!important}}
