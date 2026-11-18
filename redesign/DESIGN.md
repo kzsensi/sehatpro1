@@ -149,3 +149,5 @@ Phone reading order is hero → hospital partners → services → about → rea
 This is a local review iteration. Do not commit or push it. Run the local app at http://127.0.0.1:5173/.
 
 Publishing update: after reviewing the local work, the user explicitly requested 'quickly correct it doo it and push'. This authorizes pushing the completed mobile and matching page update to GitHub.
+
+Final scope: the user requested restoration of every non-home page after the push. Only `/` uses the revised design. All other routes load the byte-identical preserved production application and its separate original stylesheet. The newly introduced page renderer and policy wrapper are removed, and policy source files are restored. The homepage, its mobile menu, stronger artwork colors and grouped marquees stay intact.

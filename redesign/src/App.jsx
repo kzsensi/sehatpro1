@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Cursor } from './components/Motion';
 import services from './data/services.json';
 import Home, { HomeLink } from './Home';
-import { resolvePage } from './Pages';
 
 const path = window.location.pathname.replace(/\/$/, '') || '/';
 const policies = [
@@ -195,14 +194,13 @@ function Footer({ home = false }) {
 }
 
 export default function App() {
-  const { page, title } = path === '/' ? { page: <Home services={servicePages} />, title: 'OPD & wellness memberships' } : resolvePage(path, servicePages);
-  useEffect(() => { document.title = title + ' | SehatFirstPro'; }, [title]);
+  useEffect(() => { document.title = 'OPD & wellness memberships | SehatFirstPro'; }, []);
 
   return <div className="site-shell site-shell--home">
     <Cursor />
     <a href="#main" className="skip">Skip to content</a>
     <Header />
-    <main id="main" tabIndex={-1}>{page}</main>
+    <main id="main" tabIndex={-1}><Home services={servicePages} /></main>
     <Footer home />
   </div>;
 }

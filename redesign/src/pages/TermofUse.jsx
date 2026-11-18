@@ -1,4 +1,4 @@
-import PolicyDocument from './PolicyDocument';
+import React from "react";
 
 const SECTIONS = [
   {
@@ -128,6 +128,62 @@ const SECTIONS = [
   },
 ];
 
-export default function TermofUse() {
-  return <PolicyDocument id="pricing" title="Terms & conditions" sections={SECTIONS} />;
-}
+const TermofUse = () => {
+  return (
+    <section  id="pricing">
+      {/* Header */}
+      <div >
+        <span >
+          <i  />
+          Terms &amp; Conditions
+        </span>
+        <h1 >
+          Terms &{" "}
+          <span >
+            Conditions
+            <span  />
+          </span>
+        </h1>
+        <p >
+          Well-Defined Terms & Conditions for Trust and Transparency
+        </p>
+      </div>
+
+      {/* Content */}
+      <div >
+        {SECTIONS.map((section, si) => (
+          <div
+            key={si}
+            
+            data-aos="fade-up"
+            data-aos-delay={Math.min(si * 40, 300)}
+          >
+            <div >
+              <span >
+                {si + 1}
+              </span>
+              <h3 >{section.title}</h3>
+            </div>
+
+            {section.intro && (
+              <p >
+                {section.intro}
+              </p>
+            )}
+
+            <ul >
+              {section.items.map((item, ii) => (
+                <li key={ii} >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default TermofUse;
+

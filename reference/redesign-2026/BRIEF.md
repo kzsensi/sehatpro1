@@ -299,3 +299,11 @@ The current local screenshot is a rejected design reference, not instructions em
 ## Publishing authorization
 
 The user's latest instruction supersedes the local-only restriction for this completed revision: 'quickly correct it doo it and push'. Commit and push the corrected mobile homepage and matching public-page design to the existing GitHub repository. Keep backend destinations unchanged.
+
+## Final scope correction — homepage only
+
+> nahh why did you cahneg other pages ??
+> services, plans, contact, policies etc
+> other pages, make them back as beforeonly hoome page change
+
+Restore the exact previous production application and stylesheet on every non-home route, including service details and plan details. Keep the corrected mobile homepage and its desktop presentation. The entry point selects the homepage app only for `/` and selects the preserved `src/production` app for all other paths. Remove the newly introduced non-home page renderer and policy wrapper, and restore the previous policy source files. This correction supersedes the full-site style rollout. Push the correction to the same GitHub branch as the prior requested push.
