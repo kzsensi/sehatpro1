@@ -101,16 +101,6 @@
 .clinic-step-copy h3 { font-size: clamp(1.37rem,2.6vw,2.2rem); }
 .clinic-step-copy p { margin-top: 9px; max-width: 42ch; color: #4b5c6f; }
 .clinic-step-nav { display: none; }
-.clinic-stories { display: grid; grid-template-columns: .65fr 1.35fr; gap: 25px clamp(28px,6vw,85px); padding: clamp(24px,4.5vw,58px); border: 1px solid var(--home-line); border-radius: var(--home-radius); background: #f1f6fd; }
-.clinic-stories h2 { max-width: 13ch; }
-.clinic-quote-controls { display: flex; gap: 7px; margin-top: 19px; }
-.clinic-quote-controls button { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid #9caec3; background: #fff; color: var(--home-blue); }
-.clinic-quote-controls svg { width: 19px; height: 19px; }
-.clinic-quote-body { align-self: center; min-height: 135px; }
-.clinic-quote-body figure { animation: quote-in var(--swap) var(--ease-out); }
-.clinic-quote-body blockquote { font-size: clamp(1.18rem,2.1vw,1.86rem); font-weight: 570; line-height: 1.4; letter-spacing: -.017em; }
-.clinic-quote-body figcaption { margin-top: 15px; color: #4b5c6f; font-size: .95rem; }
-@keyframes quote-in { from { opacity: .2; translate: 0 5px; } to { opacity: 1; translate: none; } }
 .site-shell .site-footer { border: 0; border-radius: 26px 26px 0 0; background: #1c2539; color: #fff; }
 .site-shell .site-footer :is(h2,a) { color: #fff; }
 .site-shell .site-footer .footer-main a:not(.wordmark) { color: #fff; }
@@ -125,7 +115,6 @@
   .clinic-link:hover svg, .clinic-care-list a:hover .clinic-forward svg { translate: 3px 0; }
   .clinic-hospital:hover .clinic-forward svg { translate: 2px -2px; }
   .clinic-hospital:hover strong { text-decoration: underline; }
-  .clinic-quote-controls button:hover { background: #eaf1f8; }
   .site-shell .wordmark:hover img { translate: 0 -2px; }
 }
 @media (min-width:850px) and (min-height:660px) and (prefers-reduced-motion:no-preference) {
@@ -152,7 +141,7 @@
   .clinic-network { grid-template-columns: 1fr; gap: 10px; }
   .clinic-network > div { grid-template-columns: repeat(4,minmax(0,1fr)); }
   .clinic-network img { height: 26px; }
-  .clinic-about, .clinic-why, .clinic-stories { grid-template-columns: 1fr; }
+  .clinic-about, .clinic-why { grid-template-columns: 1fr; }
   .clinic-about-copy { order: 0; }
   .clinic-about-picture { min-height: 240px; }
   .clinic-about-picture > img:first-child { aspect-ratio: 1.35; }
@@ -160,8 +149,6 @@
   .clinic-step { grid-template-columns: 1fr; gap: 16px; }
   .clinic-step-image { grid-column: auto; grid-row: auto; }
   .clinic-step-copy { grid-row: 1; }
-  .clinic-stories-copy { display: flex; justify-content: space-between; align-items: center; gap: 13px; }
-  .clinic-quote-controls { margin-top: 0; }
 }
 
 /* Two independent logo groups share one GSAP clock. */
@@ -224,7 +211,6 @@
   .clinic-about { order: 3; }
   .clinic-why { order: 4; }
   .clinic-journey { order: 5; }
-  .clinic-stories { order: 6; }
   .clinic-home h2 { font-size: clamp(1.7rem, 6.9vw, 2rem); line-height: 1.14; letter-spacing: -.025em; }
   .clinic-partners { margin-block: 26px 35px; }
   .clinic-directory { gap: 17px; padding: 0 0 19px; }
@@ -278,12 +264,6 @@
   .clinic-step-number { display: block; margin-bottom: 4px; font-size: .8rem; }
   .clinic-step-copy h3 { font-size: 1.14rem; }
   .clinic-step-copy p { font-size: .91rem; line-height: 1.4; margin-top: 7px; }
-  .clinic-stories { padding: 24px 22px; }
-  .clinic-stories-copy { gap: 12px; }
-  .clinic-stories h2 { font-size: 1.6rem; }
-  .clinic-quote-controls { gap: 6px; }
-  .clinic-quote-body { min-height: 0; }
-  .clinic-quote-body blockquote { font-size: 1.14rem; line-height: 1.48; }
   .site-shell .footer-signpost { padding-block: 27px; }
   .site-shell .footer-signpost h2 { font-size: 1.85rem; }
   .site-shell .footer-main { padding-top: 29px; }
@@ -294,8 +274,6 @@
   .clinic-care-list { gap: 10px; }
   .clinic-care-list a > div { padding: 12px 10px; }
   .site-shell .clinic-care-list h3 { font-size: 1rem; }
-  .clinic-stories-copy { display: block; }
-  .clinic-quote-controls { margin-top: 15px; }
 }
 @media (max-width:680px) {
   .site-shell { font-family: 'Public Sans', Arial, sans-serif; }
@@ -311,7 +289,6 @@
   .clinic-step-copy p { font-size: .87rem; line-height: 1.5; }
   .clinic-hospital-info strong { font-size: .93rem; }
   .clinic-hospital-info > span { font-size: .78rem; }
-  .clinic-quote-body blockquote { font-family: Urbanist, sans-serif; font-size: 1.25rem; }
   .site-shell .footer-main a:not(.wordmark), .site-shell .footer-address { font-size: .85rem; }
   .site-shell .footer-brand p { font-size: .92rem; }
 }
@@ -441,4 +418,28 @@
   .clinic-hero-actions { margin-top: 16px; gap: 12px 24px; }
   .clinic-hero-art { aspect-ratio: 1.5; }
   .clinic-hero-art img { object-position: center; }
+}
+
+/* The member's words are the content; the section needs no enclosing card. */
+.member-stories { padding-block: 32px; font-family: 'Public Sans', Arial, sans-serif; }
+.member-story-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+.site-shell .member-story-heading h2 { font-family: 'Public Sans', Arial, sans-serif; font-size: 28px; line-height: 36px; font-weight: 500; letter-spacing: 0; }
+.member-story-position { flex: none; color: #4b5c6f; font-size: 16px; line-height: 24px; font-variant-numeric: tabular-nums; }
+.member-story-reading { position: relative; margin: 40px 0 0 128px; }
+.member-story-reading blockquote { max-width: 36ch; color: #202d48; font-size: clamp(24px, 2.3vw, 32px); line-height: 1.5; font-weight: 400; letter-spacing: 0; }
+.member-story-reading figcaption { display: flex; gap: 16px; align-items: center; margin-top: 32px; padding-right: 256px; color: #202d48; font-size: 16px; line-height: 24px; font-weight: 500; }
+.member-story-reading figcaption img { flex: none; width: 56px; height: 56px; object-fit: cover; border-radius: 8px; }
+.member-story-controls { position: absolute; bottom: 0; right: 0; display: flex; gap: 24px; }
+.member-story-controls button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 4px; border: 0; background: transparent; color: #0657a3; font-size: 16px; font-weight: 400; }
+.member-story-controls svg { width: 18px; height: 18px; }
+@media (hover:hover) and (pointer:fine) { .member-story-controls button:hover span { text-decoration: underline; text-underline-offset: 4px; } }
+@media (max-width:1000px) { .member-story-reading { margin-left: 0; } }
+@media (max-width:680px) {
+  .member-stories { order: 6; padding-block: 24px; }
+  .member-story-heading { gap: 16px; align-items: center; }
+  .site-shell .member-story-heading h2 { max-width: 16ch; font-size: 24px; line-height: 32px; }
+  .member-story-reading { margin-top: 24px; }
+  .member-story-reading blockquote { font-size: 22px; line-height: 32px; }
+  .member-story-reading figcaption { margin-top: 24px; padding-right: 0; }
+  .member-story-controls { position: static; justify-content: flex-end; margin-top: 24px; }
 }

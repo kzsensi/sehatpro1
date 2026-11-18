@@ -238,19 +238,22 @@ function MemberStories() {
     setQuote(current => (current + direction + testimonials.length) % testimonials.length);
   }
 
-  return <section className="clinic-frame clinic-section clinic-stories" aria-labelledby="clinic-quote-title">
-    <div className="clinic-stories-copy">
+  return <section className="clinic-frame clinic-section member-stories" aria-labelledby="clinic-quote-title">
+    <div className="member-story-heading">
       <h2 id="clinic-quote-title">What our members say</h2>
-      <div className="clinic-quote-controls" role="group" aria-label="Browse member stories">
-        <button type="button" aria-label="Previous testimonial" onClick={() => changeQuote(-1)}><Icon type="left" /></button>
-        <button type="button" aria-label="Next testimonial" onClick={() => changeQuote(1)}><Icon type="arrow" /></button>
-      </div>
+      <span className="member-story-position" aria-hidden="true">{quote + 1} / {testimonials.length}</span>
     </div>
-    <div className="clinic-quote-body" aria-live="polite" aria-atomic="true">
-      <figure key={testimonial.id}>
-        <blockquote>“{testimonial.review.trim()}”</blockquote>
-        <figcaption>{testimonial.name}</figcaption>
-      </figure>
+    <div className="member-story-reading">
+      <div aria-live="polite" aria-atomic="true">
+        <figure key={testimonial.id}>
+          <blockquote>“{testimonial.review.trim()}”</blockquote>
+          <figcaption><img src={testimonial.image} width="56" height="56" alt="" loading="lazy" decoding="async" /><span>{testimonial.name}</span></figcaption>
+        </figure>
+      </div>
+      <div className="member-story-controls" role="group" aria-label="Browse member stories">
+        <button type="button" aria-label="Previous testimonial" onClick={() => changeQuote(-1)}><Icon type="left" /><span>Previous</span></button>
+        <button type="button" aria-label="Next testimonial" onClick={() => changeQuote(1)}><span>Next</span><Icon type="arrow" /></button>
+      </div>
     </div>
   </section>;
 }

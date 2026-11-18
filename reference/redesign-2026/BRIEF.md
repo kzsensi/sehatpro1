@@ -347,3 +347,9 @@ The three follow-up screenshots identify the existing phone hero, its pastel ico
 ![Rejected phone hero.](brief-images/rejected-unslop-hero.png)
 ![Rejected pastel shortcuts.](brief-images/rejected-unslop-shortcuts.png)
 ![Rejected floating image label.](brief-images/rejected-unslop-badge.png)
+
+## Member testimonial correction — push this section
+
+The user asks to apply the same cleanup to “What our members say” (image 2) and push that change. This instruction is separate from the appointment section, which is reserved for a local preview. Redesign the testimonial panel only in this production commit. Keep existing quotes, author names, portraits and manual navigation.
+
+![Rejected member testimonial panel.](brief-images/rejected-member-panel.png)

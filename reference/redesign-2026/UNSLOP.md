@@ -96,3 +96,11 @@ Implementation prompt extension: remove the floating image badge and the three d
 The desktop hero is an open white split, with its copy centered against the clinical photograph. The phone composition reads title → offer → price → actions → photograph. Touch targets are at least 44px. The photograph has no overlay label. All eight services are still directly reachable in the unchanged service directory, and Contact remains in navigation and the support line. No feature is removed.
 
 Hero verification: checked 320, 390, 768, 1440 and 1920px. No horizontal overflow, missing hero image or browser errors. The old photo badge and shortcut tiles are absent. Primary and secondary actions keep their original plan/service destinations; the primary target is 48px high, and the medical photo starts within the phone's first viewport. Mobile menu open/Escape and the existing customer login URL were verified. Hero WCAG A/AA axe scans passed at 390 and 1440px. Final build and all 22 route-render checks passed. The preserved production entry path, app and styles were not edited.
+
+## Member stories — requested production change
+
+The user requested the same unslop treatment for the member testimonial section and explicitly asked for this section to be pushed. Remove the pale enclosing panel, oversized heavy heading and circular button chrome. Keep the source quotes and names word-for-word, show their existing portraits, and use a legible Public Sans quotation with plain Previous/Next controls and a quiet position count. No stars, verification labels or new claims are added. The quote is not auto-advanced or animated. Content determines the section height, including on phones.
+
+The “From plan to appointment” section must remain unchanged in this commit. Its requested redesign is a separate local preview to be made only after the testimonial commit has been pushed.
+
+Checked all four quotes and portrait loads, Previous/Next wraparound, 320/390/768/1440px overflow, section accessibility at 390/1440px, build and all 22 route renders. The existing Journey function is compared with HEAD before pushing to confirm it has not changed.
