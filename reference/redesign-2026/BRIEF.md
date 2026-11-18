@@ -325,3 +325,25 @@ The first three attached images are production visual references for medical pho
 ![Rejected homepage reasons list.](brief-images/rejected-reasons-list.png)
 
 Implementation: eight photographic service cards using the supplied site's original photography, with a mosaic on desktop and full-width cards on phones. White text has a strong lower gradient and each entire card links to its original service detail. The reasons section uses four individual benefit cards, restrained colored icons, and a doctor portrait with a contact link. Responsive WebP exports of the existing photos are in public/medical; all 18 variants together are under 0.8 MB. Prices and availability copy follow the current membership data. No other pages, redirects or backend connections change.
+
+## Membership section unslop correction
+
+> this looks ai,
+> I want yiu to analzye anti ai prompt
+> [kiza-charles-unslop] [kiza-unslop]
+> Fix this section
+> redeisgn again and push
+
+The attached crop identifies the four matching pastel-icon benefit tiles as rejected. Apply both explicitly requested skills from C:/Users/Krishna/.codex/skills. The anti-AI audit, product direction, implementation prompt, passes and verification are recorded in UNSLOP.md. Replace only this homepage section with factual catalog-derived Wellness First allowances. Keep the rest of the homepage and every original non-home page unchanged. Push the corrected section.
+
+![Rejected AI-looking benefit tiles.](brief-images/rejected-unslop-cards.png)
+
+## Apply the unslop audit to the hero
+
+> in our hero section as well
+
+The three follow-up screenshots identify the existing phone hero, its pastel icon shortcuts and the floating label on the medical photo. Extend the current kiza-charles-unslop and kiza-unslop work to the hero. Remove those decorative layers, keep the clinical photograph and original logo, simplify the copy and type, and use one plan action plus one service text link. The phone composition places the offer before the photo. The scope remains homepage only, and the earlier request to push still applies.
+
+![Rejected phone hero.](brief-images/rejected-unslop-hero.png)
+![Rejected pastel shortcuts.](brief-images/rejected-unslop-shortcuts.png)
+![Rejected floating image label.](brief-images/rejected-unslop-badge.png)

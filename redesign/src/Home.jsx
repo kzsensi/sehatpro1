@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Heading } from './components/EditorialMotion';
 import ClinicalArt from './components/ClinicalArt';
 import testimonials from './data/testimonials.json';
+import plans from './data/plans.json';
+import { benefitText } from './data/benefitText';
 import './home.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,13 +30,7 @@ const membershipSteps = [
   ['Sign in to the portal', 'Use the mobile number you registered with.', 'activate'],
   ['Book your care', 'Check your available benefits and arrange a consultation or other covered service.', 'book'],
 ];
-
-const benefits = [
-  ['clock', 'Simple plans. Clear benefits.', 'See what’s included, who is covered and the consultation limits before you choose.'],
-  ['shield', 'Care for your budget.', 'Annual memberships start at ₹999 + GST, with individual and family options.'],
-  ['heart', 'OPD and wellness, together.', 'Doctor consultations, health checks and wellness support, according to your plan.'],
-  ['support', 'A team you can talk to.', 'Get help with your membership, benefits and booking from our support team.'],
-];
+const entryPlan = plans.find(plan => plan.planCode === 'wellnessfirst');
 
 const providers = ['1.svg', '2.svg', '4.svg', '5.svg', '6.svg', '7.svg', '8.svg', '9.png', '10.png', '11.png', '12.png', '13.svg', '14.png'];
 
@@ -93,9 +89,6 @@ function PartnerMarquee() {
 
 function Icon({ type }) {
   const paths = {
-    clock: 'M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z',
-    shield: 'M12 3 4 6v5c0 5 8 10 8 10s8-5 8-10V6l-8-3Zm-4 9 3 3 5-6',
-    heart: 'M20 5a5 5 0 0 0-8 1 5 5 0 0 0-8-1c-4 4 1 10 8 15 7-5 12-11 8-15ZM3 12h5l2-4 4 8 2-4h5',
     phone: 'M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z',
     test: 'm9 3 6 0m-5 0v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8',
     support: 'M4 14v-3a8 8 0 0 1 16 0v3M4 11H3v6h4v-6H4Zm16 0h1v6h-4v-6h3Zm0 6a4 4 0 0 1-4 4h-3',
@@ -119,22 +112,16 @@ function Hero() {
   return <section className="clinic-intro frame" aria-labelledby="clinic-home-title">
     <div className="clinic-hero">
       <div className="clinic-masthead">
-        <h1 id="clinic-home-title">Everyday healthcare.<br /><span>One membership.</span></h1>
+        <h1 id="clinic-home-title">A year of outpatient care</h1>
         <p>Doctor consultations, health checkups and wellness support for you and your family.</p>
-        <HomeLink href="/plans">Explore our plans</HomeLink>
-        <small>Annual plans from <strong>₹999</strong> + GST</small>
+        <p className="clinic-hero-price">From <strong>{entryPlan.price}</strong> + GST / year</p>
+        <div className="clinic-hero-actions"><HomeLink href="/plans">View plans</HomeLink><a className="clinic-hero-secondary" href="/services">See services</a></div>
       </div>
       <picture className="clinic-hero-art">
         <source media="(max-width: 680px)" srcSet="/clinic/consult-photo-760.webp" />
         <img src="/clinic/consult-photo.webp" width="1440" height="960" fetchPriority="high" decoding="async"
           alt="A doctor and patient during an outpatient appointment." />
       </picture>
-      <a className="clinic-hero-service" href="/services/consultation"><Icon type="check" /><span>Care online and in person</span><Icon type="arrow" /></a>
-    </div>
-    <div className="clinic-hero-links">
-      <a href="/services/tele-consultation"><Icon type="phone" /><span>Talk to a doctor</span><Icon type="arrow" /></a>
-      <a href="/services/diagnostics"><Icon type="test" /><span>Explore health checks</span><Icon type="arrow" /></a>
-      <a href="/contact"><Icon type="support" /><span>Speak with our team</span><Icon type="arrow" /></a>
     </div>
   </section>;
 }
@@ -201,22 +188,25 @@ function CareIndex({ services }) {
 }
 
 function WhyChoose() {
+  const plan = entryPlan;
   return <section className="clinic-section home-reasons" aria-labelledby="clinic-why-title">
     <div className="clinic-frame home-reasons-inner">
-      <div className="home-section-heading"><div><Heading id="clinic-why-title">Why choose SehatFirstPro?</Heading><p>Healthcare that fits your everyday life.</p></div></div>
-      <div className="home-reasons-body">
-        <dl className="home-reason-grid">
-          {benefits.map(([icon, title, copy]) => <div className="home-reason" key={title}>
-            <dt><span className={'home-reason-icon home-reason-icon--' + icon} aria-hidden="true"><Icon type={icon} /></span><span>{title}</span></dt>
-            <dd>{copy}</dd>
-          </div>)}
-        </dl>
-        <div className="home-reasons-photo"><picture>
-          <img src="/medical/why.webp" srcSet="/medical/why-phone.webp 520w, /medical/why.webp 900w"
-            sizes="(max-width: 1000px) calc(100vw - 36px), 32vw"
-            alt="A doctor speaking with a patient in a clinic." width="900" height="1350" loading="lazy" decoding="async" />
-        </picture><HomeLink href="/contact">Talk to our team</HomeLink></div>
+      <div className="membership-note">
+        <h2 id="clinic-why-title">Know what <span>{plan.price}</span> includes</h2>
+        <p>{plan.name} is a one-year membership. {plan.eligibility} Price excludes GST.</p>
+        <p>Family memberships and plans with health checkups are also available.</p>
+        <HomeLink href={'/plans/' + plan.planCode}>View {plan.name}</HomeLink>
       </div>
+      <table className="membership-allowances">
+        <caption>{plan.name} annual benefits</caption>
+        <thead><tr><th scope="col">Benefit</th><th scope="col">Included</th></tr></thead>
+        <tbody>{plan.benefits.map(benefit => {
+          const [, quantity, label] = benefitText(benefit).match(/^(\d+)\s+(.+)$/);
+          const serviceLabel = quantity === '1' ? label.replace(/\bcheckups\b/, 'checkup') : label;
+          return <tr key={benefit}><th scope="row">{serviceLabel.charAt(0).toUpperCase() + serviceLabel.slice(1)}</th><td>{quantity}</td></tr>;
+        })}</tbody>
+      </table>
+      <p className="membership-help">Need help comparing plans? <a href="tel:+919425005087">Call +91 9425005087<Icon type="arrow" /></a></p>
     </div>
   </section>;
 }
