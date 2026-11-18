@@ -260,9 +260,9 @@ export function Reveal({ children, className = '', delay = 0, as: Tag = 'div', .
   useEffect(() => {
     const mm = gsap.matchMedia();
     mm.add('(prefers-reduced-motion: no-preference)', () => {
-      gsap.fromTo(ref.current, { y: 28, opacity: 0 }, {
-        y: 0, opacity: 1, duration: .85, delay, ease: 'power3.out',
-        scrollTrigger: { trigger: ref.current, start: 'top 95%', once: true },
+      gsap.fromTo(ref.current, { y: 12, opacity: 0 }, {
+        y: 0, opacity: 1, duration: .34, delay, ease: 'power3.out',
+        scrollTrigger: { trigger: ref.current, start: 'top 94%', once: true },
         clearProps: 'transform,opacity',
       });
     });
@@ -305,4 +305,3 @@ export function Cursor() {
 }
 
 export default Magnet;
-

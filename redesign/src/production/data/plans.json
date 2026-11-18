@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "name": "Wellness First",
+    "price": "₹999",
+    "coverage": "Individual",
+    "benefits": [
+      "4 Teleconsultation - General Physician(Instant)",
+      "4 Teleconsultation - Ayurveda",
+      "4 Teleconsultation - Homeopathy",
+      "2 Teleconsultation - Choose from 18 Specialist",
+      "2 Teleconsultation - Emotional Wellness",
+      "1 Teleconsultation -  Dietician",
+      "2 Video Consultation - General Physician",
+      "1 Dental Checkup & Consultation"
+    ],
+    "eligibility": "Valid for individuals aged 18–85.",
+    "value_added_features": [
+      "Unlimited Risk Assessment",
+      "Unlimited Health Reminder",
+      "Unlimited Recorded Fitness sessions"
+    ],
+    "platform_benefits": [
+      "Upto 50% off on diagnostic test & packages (20,000 diagnostics test up 50% discount)",
+      "Upto 20% off on prescribed medicines"
+    ],
+    "planCode": "wellnessfirst"
+  },
+  {
+    "id": 2,
+    "name": "Wellness Essential",
+    "price": "₹3499",
+    "coverage": "Individual",
+    "benefits": [
+      "8 Teleconsultation - General Physician(Instant)",
+      "8 Teleconsultation - Ayurveda",
+      "8 Teleconsultation - Homeopathy",
+      "2 Teleconsultation - Choose from 18 Specialist",
+      "4 Teleconsultation - Emotional Wellness",
+      "2 Teleconsultation -  Dietician",
+      "4 Video Consultation - General Physician",
+      "1 Annual Health Checkup(Basic) - At Doorstep sample collection",
+      "1 Dental Checkup & Consultation",
+      "1 Pet Health Video Consultation"
+    ],
+    "eligibility": "Valid for individuals aged 18–85.",
+    "value_added_features": [
+      "Unlimited Risk Assessment",
+      "Unlimited Health Reminder",
+      "Unlimited Recorded Fitness sessions"
+    ],
+    "platform_benefits": [
+      "Upto 50% off on diagnostic test & packages (20,000 diagnostics test up 50% discount)",
+      "Upto 20% off on prescribed medicines"
+    ],
+    "planCode": "wellnessessential"
+  },
+  {
+    "id": 4,
+    "name": "Wellness Advantage",
+    "price": "₹4999",
+    "coverage": "Individual",
+    "benefits": [
+      "8 Teleconsultation - General Physician(Instant)",
+      "8 Teleconsultation - Ayurveda",
+      "8 Teleconsultation - Homeopathy",
+      "4 Teleconsultation - Choose from 18 Specialist",
+      "4 Teleconsultation - Emotional Wellness",
+      "4 Teleconsultation -  Dietician",
+      "6 Video Consultation - General Physician",
+      "1 Annual Health Checkup(Basic) - At Doorstep sample collection",
+      "2 Consultations on In-person General Physician Clinic or Hospital Consultation for My Choice Doctor",
+      "2 Dental Checkup & Consultation",
+      "2 Pet Health Video Consultation"
+    ],
+    "eligibility": "Valid for individuals aged 18–85.",
+    "value_added_features": [
+      "Risk Assessment",
+      "Health Reminder",
+      "Recorded Fitness sessions"
+    ],
+    "platform_benefits": [
+      "Upto 50% off on diagnostic test & packages (20,000 diagnostics test up 50% discount)",
+      "Upto 20% off on prescribed medicines"
+    ],
+    "planCode": "wellnessadvantage"
+  },
+  {
+    "id": 5,
+    "name": "Wellness Elite",
+    "price": "₹6499",
+    "coverage": "Family - 2 Adults + 2 Children",
+    "benefits": [
+      "12 Teleconsultation - General Physician(Instant)",
+      "12 Teleconsultation - Ayurveda",
+      "12 Teleconsultation - Homeopathy",
+      "6 Teleconsultation - Choose from 18 Specialist",
+      "4 Teleconsultation - Emotional Wellness",
+      "4 Teleconsultation -  Dietician",
+      "8 Video Consultation - General Physician",
+      "1 Annual Health Checkup(Basic) - At Doorstep sample collection",
+      "6 Consultations on In-person General Physician Clinic or Hospital Consultation for My Choice Doctor",
+      "2 Dental Checkup & Consultation",
+      "2 Pet Health Video Consultation"
+    ],
+    "eligibility": "Valid for individuals aged 18–85.",
+    "value_added_features": [
+      "Risk Assessment",
+      "Health Reminder",
+      "Recorded Fitness sessions"
+    ],
+    "platform_benefits": [
+      "Upto 50% off on diagnostic test & packages (20,000 diagnostics test up 50% discount)",
+      "Upto 20% off on prescribed medicines"
+    ],
+    "planCode": "wellnesselite"
+  },
+  {
+    "id": 7,
+    "name": "Wellness Platinum",
+    "price": "₹9999",
+    "coverage": "Family - 2 Adults + 2 Children",
+    "benefits": [
+      "Unlimited Teleconsultation - General Physician(Instant)",
+      "Unlimited Teleconsultation - Ayurveda",
+      "Unlimited Teleconsultation - Homeopathy",
+      "Unlimited Teleconsultation - Choose from 18 Specialist",
+      "4 Teleconsultation - Emotional Wellness",
+      "4 Teleconsultation -  Dietician",
+      "8 Video Consultation - General Physician",
+      "2 Annual Health Checkup(Basic) - At Doorstep sample collection",
+      "8 Consultations on In-person General Physician Clinic or Reimbursement upto ₹300 per Consultation for My Choice Doctor",
+      "4 Dental Checkup & Consultation",
+      "2 Pet Health Video Consultation"
+    ],
+    "eligibility": "Valid for individuals aged upto 60 years",
+    "value_added_features": [
+      "Risk Assessment",
+      "Health Reminder",
+      "Recorded Fitness sessions"
+    ],
+    "platform_benefits": [
+      "Upto 50% off on diagnostic test & packages (50,000 diagnostics test up 50% discount)",
+      "Upto 20% off on prescribed medicines"
+    ],
+    "planCode": "wellnessplatinum"
+  },
+  {
+    "id": 8,
+    "name": "Wellness GoldenCare",
+    "price": "₹9999",
+    "coverage": "Individual",
+    "benefits": [
+      "Unlimited Teleconsultation - General Physician(Instant)",
+      "Unlimited Teleconsultation - Ayurveda",
+      "Unlimited Teleconsultation - Homeopathy",
+      "Unlimited Teleconsultation - Choose from 18 Specialist",
+      "8 Teleconsultation - Emotional Wellness",
+      "8 Teleconsultation -  Dietician",
+      "8 Video Consultation - General Physician",
+      "2 Annual Health Checkup(Essential) - At Doorstep sample collection",
+      "6 Consultations on In-person General Physician Clinic or Reimbursement upto ₹300 per Consultation for My Choice Doctor",
+      "2 Dental Checkup & Consultation"
+    ],
+    "eligibility": "Valid for individuals aged Above 60 years",
+    "value_added_features": [
+      "Risk Assessment",
+      "Health Reminder",
+      "Recorded Fitness sessions"
+    ],
+    "platform_benefits": [
+      "Upto 50% off on diagnostic test & packages (50,000 diagnostics test up 50% discount)",
+      "Upto 20% off on prescribed medicines"
+    ],
+    "planCode": "wellnessgoldencare"
+  }
+]

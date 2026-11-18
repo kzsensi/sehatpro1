@@ -1,0 +1,4 @@
+.scroll-reveal{margin:0}
+.scroll-reveal-text{display:block;font:inherit;letter-spacing:inherit;line-height:inherit}
+.scroll-reveal-word,.scroll-reveal-piece{display:inline-block}
+@media(prefers-reduced-motion:reduce){.scroll-reveal-piece{opacity:1!important;filter:none!important;transform:none!important}}
