@@ -307,3 +307,21 @@ The user's latest instruction supersedes the local-only restriction for this com
 > other pages, make them back as beforeonly hoome page change
 
 Restore the exact previous production application and stylesheet on every non-home route, including service details and plan details. Keep the corrected mobile homepage and its desktop presentation. The entry point selects the homepage app only for `/` and selects the preserved `src/production` app for all other paths. Remove the newly introduced non-home page renderer and policy wrapper, and restore the previous policy source files. This correction supersedes the full-site style rollout. Push the correction to the same GitHub branch as the prior requested push.
+
+## Homepage service and benefit sections correction
+
+> In sehatfirspro
+> it has so much better
+> and ours (imeg 4 , 5very bad)
+> Correct the home page, redeisgn
+> these (image 4,5)
+
+The first three attached images are production visual references for medical photo cards, the member testimonial and the mobile drawer. Images four and five identify the two rejected homepage sections: the navy sticky illustration/service list and the pale blue three-line benefits block. Replace those two sections. Keep every non-home route on the preserved original production application.
+
+![Production phone service cards.](brief-images/production-phone-services.jpg)
+![Production phone member testimonial.](brief-images/production-phone-testimonial.jpg)
+![Production phone navigation drawer.](brief-images/production-phone-drawer.jpg)
+![Rejected homepage service list.](brief-images/rejected-service-list.png)
+![Rejected homepage reasons list.](brief-images/rejected-reasons-list.png)
+
+Implementation: eight photographic service cards using the supplied site's original photography, with a mosaic on desktop and full-width cards on phones. White text has a strong lower gradient and each entire card links to its original service detail. The reasons section uses four individual benefit cards, restrained colored icons, and a doctor portrait with a contact link. Responsive WebP exports of the existing photos are in public/medical; all 18 variants together are under 0.8 MB. Prices and availability copy follow the current membership data. No other pages, redirects or backend connections change.

@@ -30,13 +30,13 @@ const membershipSteps = [
 ];
 
 const benefits = [
-  ['Clear benefits before you buy', 'Wellness First includes four instant phone consultations with a general physician. Each plan lists its own limits.'],
-  ['Care online and in person', 'Choose from phone, video and in-clinic options where your plan includes them.'],
-  ['Help when you need it', 'Ask our support team about your membership, bookings or plan choices.'],
+  ['clock', 'Simple plans. Clear benefits.', 'See what’s included, who is covered and the consultation limits before you choose.'],
+  ['shield', 'Care for your budget.', 'Annual memberships start at ₹999 + GST, with individual and family options.'],
+  ['heart', 'OPD and wellness, together.', 'Doctor consultations, health checks and wellness support, according to your plan.'],
+  ['support', 'A team you can talk to.', 'Get help with your membership, benefits and booking from our support team.'],
 ];
 
 const providers = ['1.svg', '2.svg', '4.svg', '5.svg', '6.svg', '7.svg', '8.svg', '9.png', '10.png', '11.png', '12.png', '13.svg', '14.png'];
-const desktopMotion = '(min-width: 850px) and (min-height: 660px) and (prefers-reduced-motion: no-preference)';
 
 function PartnerMarquee() {
   const root = useRef(null);
@@ -93,6 +93,9 @@ function PartnerMarquee() {
 
 function Icon({ type }) {
   const paths = {
+    clock: 'M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z',
+    shield: 'M12 3 4 6v5c0 5 8 10 8 10s8-5 8-10V6l-8-3Zm-4 9 3 3 5-6',
+    heart: 'M20 5a5 5 0 0 0-8 1 5 5 0 0 0-8-1c-4 4 1 10 8 15 7-5 12-11 8-15ZM3 12h5l2-4 4 8 2-4h5',
     phone: 'M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z',
     test: 'm9 3 6 0m-5 0v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8',
     support: 'M4 14v-3a8 8 0 0 1 16 0v3M4 11H3v6h4v-6H4Zm16 0h1v6h-4v-6h3Zm0 6a4 4 0 0 1-4 4h-3',
@@ -175,77 +178,46 @@ function About() {
 }
 
 function CareIndex({ services }) {
-  const servicesSection = useRef(null);
-  const [reading, setReading] = useState(0);
-  const [hovered, setHovered] = useState(null);
-  const [focused, setFocused] = useState(null);
-  const active = focused ?? hovered ?? reading;
-
-  useEffect(() => {
-    const media = gsap.matchMedia();
-    media.add(desktopMotion, () => {
-      // The reading line changes the illustration; pointer and keyboard preview it independently.
-      const section = servicesSection.current;
-      section.querySelectorAll('[data-care-stop]').forEach((row, index) => {
-        ScrollTrigger.create({
-          trigger: row,
-          start: 'top 63%',
-          end: 'bottom 63%',
-          onEnter: () => setReading(index),
-          onEnterBack: () => setReading(index),
-        });
-      });
-    });
-    return () => media.revert();
-  }, []);
-
-  return <section className="clinic-care" id="care" ref={servicesSection} aria-labelledby="clinic-care-title">
-    <div className="clinic-frame clinic-care-inner">
-      <div className="clinic-care-heading">
-        <Heading id="clinic-care-title">What care do you need?</Heading>
+  return <section className="clinic-frame clinic-section home-care" id="care" aria-labelledby="clinic-care-title">
+      <div className="home-section-heading">
+        <div><Heading id="clinic-care-title">Healthcare services</Heading><p>Care for your everyday health.</p></div>
         <HomeLink href="/services">See all services</HomeLink>
       </div>
-      <div className="clinic-care-body">
-        <figure className="clinic-care-stage" aria-hidden="true">
-          <div className="clinic-plates">
-            {services.map((service, index) => <div className="clinic-care-scene"
-              key={service.url} data-selected={active === index}>
-              <ClinicalArt name={service.art} />
-            </div>)}
-          </div>
-          <figcaption>
-            <span>{services[active].title}</span>
-            <span>{String(active + 1).padStart(2, '0')} / {String(services.length).padStart(2, '0')}</span>
-          </figcaption>
-        </figure>
-        <ul className="clinic-care-list" onPointerLeave={() => setHovered(null)}>
-          {services.map((service, index) => <li key={service.url} data-care-stop>
-            <a href={service.url} data-selected={active === index}
-              onPointerEnter={event => { if (event.pointerType !== 'touch') setHovered(index); }}
-              onFocus={() => setFocused(index)} onBlur={() => setFocused(null)}>
-              <ClinicalArt className="clinic-inline-art" name={service.art} />
-              <div><h3>{service.title}</h3><p>{service.description}</p></div>
-              <span className="clinic-forward"><Icon type="arrow" /></span>
+        <ul className="home-care-grid">
+          {services.map((service, index) => <li key={service.url}>
+            <a href={service.url} className="home-care-card">
+              <picture>
+                <img src={'/medical/' + service.art + '.webp'}
+                  srcSet={'/medical/' + service.art + '-phone.webp 520w, /medical/' + service.art + '.webp 900w'}
+                  sizes={'(max-width: 680px) calc(100vw - 36px), (max-width: 1000px) 44vw, ' + ([0, 5, 6, 7].includes(index) ? '44vw' : '22vw')}
+                  alt="" width="900" height="600" loading="lazy" decoding="async" />
+              </picture>
+              <div className="home-care-copy"><h3>{service.title}</h3><p>{service.description}</p></div>
+              <span className="home-care-arrow"><Icon type="upRight" /></span>
             </a>
           </li>)}
         </ul>
-      </div>
-    </div>
   </section>;
 }
 
 function WhyChoose() {
-  return <section className="clinic-frame clinic-section clinic-why" aria-labelledby="clinic-why-title">
-    <div>
-      <Heading id="clinic-why-title">Why choose SehatFirstPro?</Heading>
-      <HomeLink href="/contact">Ask our team</HomeLink>
+  return <section className="clinic-section home-reasons" aria-labelledby="clinic-why-title">
+    <div className="clinic-frame home-reasons-inner">
+      <div className="home-section-heading"><div><Heading id="clinic-why-title">Why choose SehatFirstPro?</Heading><p>Healthcare that fits your everyday life.</p></div></div>
+      <div className="home-reasons-body">
+        <dl className="home-reason-grid">
+          {benefits.map(([icon, title, copy]) => <div className="home-reason" key={title}>
+            <dt><span className={'home-reason-icon home-reason-icon--' + icon} aria-hidden="true"><Icon type={icon} /></span><span>{title}</span></dt>
+            <dd>{copy}</dd>
+          </div>)}
+        </dl>
+        <div className="home-reasons-photo"><picture>
+          <img src="/medical/why.webp" srcSet="/medical/why-phone.webp 520w, /medical/why.webp 900w"
+            sizes="(max-width: 1000px) calc(100vw - 36px), 32vw"
+            alt="A doctor speaking with a patient in a clinic." width="900" height="1350" loading="lazy" decoding="async" />
+        </picture><HomeLink href="/contact">Talk to our team</HomeLink></div>
+      </div>
     </div>
-    <dl>
-      {benefits.map(([title, copy]) => <div className="clinic-benefit" key={title}>
-        <dt><span aria-hidden="true"><Icon type="check" /></span>{title}</dt>
-        <dd>{copy}</dd>
-      </div>)}
-    </dl>
   </section>;
 }
 
@@ -297,7 +269,7 @@ export default function Home({ services }) {
   return <div className="clinic-home">
     <Hero />
     <HospitalPartners />
-    <CareIndex services={services.slice(0, 4)} />
+    <CareIndex services={services} />
     <About />
     <WhyChoose />
     <Journey />
