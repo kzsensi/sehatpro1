@@ -12,7 +12,7 @@ export function Heading({ children, ...props }) {
   const heading = useRef(null);
   useEffect(() => {
     const media = gsap.matchMedia();
-    media.add(animated, () => {
+    media.add('(min-width: 850px) and ' + animated, () => {
       const node = heading.current;
       if (node.getBoundingClientRect().top < window.innerHeight) return undefined;
       const split = SplitText.create(node, {

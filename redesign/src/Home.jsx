@@ -93,6 +93,9 @@ function PartnerMarquee() {
 
 function Icon({ type }) {
   const paths = {
+    phone: 'M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z',
+    test: 'm9 3 6 0m-5 0v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8',
+    support: 'M4 14v-3a8 8 0 0 1 16 0v3M4 11H3v6h4v-6H4Zm16 0h1v6h-4v-6h3Zm0 6a4 4 0 0 1-4 4h-3',
     arrow: 'M4 12h15m-6-6 6 6-6 6',
     left: 'M20 12H5m6-6-6 6 6 6',
     upRight: 'M6 18 18 6M7 6h11v11',
@@ -126,9 +129,9 @@ function Hero() {
       <a className="clinic-hero-service" href="/services/consultation"><Icon type="check" /><span>Care online and in person</span><Icon type="arrow" /></a>
     </div>
     <div className="clinic-hero-links">
-      <a href="/services/tele-consultation"><span>Talk to a doctor</span><Icon type="arrow" /></a>
-      <a href="/services/diagnostics"><span>Explore health checks</span><Icon type="arrow" /></a>
-      <a href="/contact"><span>Speak with our team</span><Icon type="arrow" /></a>
+      <a href="/services/tele-consultation"><Icon type="phone" /><span>Talk to a doctor</span><Icon type="arrow" /></a>
+      <a href="/services/diagnostics"><Icon type="test" /><span>Explore health checks</span><Icon type="arrow" /></a>
+      <a href="/contact"><Icon type="support" /><span>Speak with our team</span><Icon type="arrow" /></a>
     </div>
   </section>;
 }
@@ -165,7 +168,7 @@ function About() {
       <HomeLink href="/plans">See membership options</HomeLink>
     </div>
     <div className="clinic-about-picture">
-      <img src="/clinic/consult-photo.webp" alt="A doctor and patient discussing outpatient care." width="1440" height="960" loading="lazy" decoding="async" />
+      <img src="/clinic/visit.webp" alt="A doctor checking an older patient’s blood pressure." width="1440" height="600" loading="eager" decoding="async" />
       <ClinicalArt className="clinic-about-inset" name="family" />
     </div>
   </section>;
@@ -294,9 +297,9 @@ export default function Home({ services }) {
   return <div className="clinic-home">
     <Hero />
     <HospitalPartners />
+    <CareIndex services={services.slice(0, 4)} />
     <About />
     <WhyChoose />
-    <CareIndex services={services.slice(0, 4)} />
     <Journey />
     <MemberStories />
   </div>;

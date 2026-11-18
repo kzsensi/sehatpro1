@@ -16,10 +16,10 @@ cd redesign
 node smoke-check.cjs
 ```
 
-Run `npm run dev` from the project root to serve the preserved original marketing/customer frontend on 4173 and agent frontend on 4174. Those are the destinations of the proposal's login and purchase links.
+Run `npm run dev` from the project root to serve the preserved original marketing/customer frontend on 4173 and agent frontend on 4174. The local checkout and footer login links use these mirrors. The header Login menu uses the existing customer and agent portals and honors `VITE_CARE_PORTAL_URL` and `VITE_SALES_PORTAL_URL`.
 
 The contact form validates fields and displays a local preview status. It does not send enquiries. The proposal itself does not call the live medical, OTP or payment APIs.
 
-Research, content map, checks and current limitations: `../reference/BRAND-REVISION.md`. Source code and license ledger: `../reference/COMPONENT-SOURCES.md`. The previous cream design is archived under `../reference/archive`.
+All public pages share the current navy, blue, mint and peach design system. The phone layout uses a photograph-first white homepage, an accessible mobile menu, illustrated service cards and compact booking steps. See `DESIGN.md` and `../reference/redesign-2026/BRIEF.md` for the design decisions and supplied references. Site comparisons and verification are in `../reference/redesign-2026/RESEARCH.md`. Source code and license ledger: `../reference/COMPONENT-SOURCES.md`. The previous cream design is archived under `../reference/archive`.
 
 Made with fun-isometric by Kelvin Adithya (https://x.com/KelvinAdithya), heavily inspired by Slush (https://slush.app), more at https://skills.klvn.dev/fun-isometric.

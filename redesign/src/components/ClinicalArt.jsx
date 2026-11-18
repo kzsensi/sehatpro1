@@ -4,6 +4,6 @@ const naturalHeights = {
 };
 
 export default function ClinicalArt({ name, className, alt = '', eager = false }) {
-  return <img className={className} src={'/clinic/' + name + '.webp'} alt={alt}
-    width={758} height={naturalHeights[name] ?? 566} loading={eager ? 'eager' : 'lazy'} decoding="async" />;
+  return <img className={['clinical-art', className].filter(Boolean).join(' ')} src={'/clinic/' + name + '.webp'} alt={alt}
+    width={758} height={naturalHeights[name] ?? 566} loading="eager" decoding="async" />;
 }

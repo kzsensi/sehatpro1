@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Cursor } from './components/Motion';
 import services from './data/services.json';
 import Home, { HomeLink } from './Home';
+import { resolvePage } from './Pages';
 
 const path = window.location.pathname.replace(/\/$/, '') || '/';
 const policies = [
@@ -56,6 +57,23 @@ function Header() {
   const menuButton = useRef(null);
   const policyButton = useRef(null);
   const loginButton = useRef(null);
+  const mobileDialog = useRef(null);
+
+  useEffect(() => {
+    const dialog = mobileDialog.current;
+    if (menu) dialog.showModal();
+    else if (dialog.open) dialog.close();
+    const previousOverflow = document.body.style.overflow;
+    if (menu) document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [menu]);
+
+  useEffect(() => {
+    const query = window.matchMedia('(min-width: 811px)');
+    const closeOnDesktop = event => { if (event.matches) setMenu(false); };
+    query.addEventListener('change', closeOnDesktop);
+    return () => query.removeEventListener('change', closeOnDesktop);
+  }, []);
 
   useEffect(() => {
     const outside = event => {
@@ -89,15 +107,12 @@ function Header() {
   function toggleMenu(event) {
     setMenu(!menu);
     setPopup('');
-    if (!menu && event.detail === 0) {
-      requestAnimationFrame(() => ref.current.querySelector('.main-nav > a')?.focus());
-    }
   }
 
   return <header className="site-header" ref={ref}>
     <div className="frame nav-row">
       <Wordmark />
-      <nav className={menu ? 'main-nav is-open' : 'main-nav'} id="main-nav" aria-label="Main navigation">
+      <nav className="main-nav" id="main-nav" aria-label="Main navigation">
         {navigation.map(([label, href]) => (
           <a key={href} href={href} aria-current={path === href ? 'page' : undefined}
             data-section-active={path.startsWith(href + '/') || undefined}>{label}</a>
@@ -121,13 +136,25 @@ function Header() {
             <a href={salesPortalUrl}>Agent login <Arrow /></a>
           </div>
         </div>
-        <button type="button" className="mobile-toggle" ref={menuButton} aria-expanded={menu} aria-controls="main-nav"
+        <button type="button" className="mobile-toggle" ref={menuButton} aria-expanded={menu} aria-controls="mobile-menu" aria-haspopup="dialog"
           aria-label={menu ? 'Close navigation' : 'Open navigation'}
           onClick={toggleMenu}>
           <span aria-hidden="true" /><span aria-hidden="true" />
         </button>
       </div>
     </div>
+    <dialog ref={mobileDialog} id="mobile-menu" className="mobile-menu" aria-labelledby="mobile-menu-title"
+      onCancel={() => setMenu(false)} onClose={() => { setMenu(false); menuButton.current?.focus(); }}
+      onClick={event => { if (event.target === event.currentTarget) setMenu(false); }}>
+      <div className="mobile-menu-panel">
+        <div className="mobile-menu-top"><span id="mobile-menu-title">Explore SehatFirstPro</span>
+          <button type="button" autoFocus className="mobile-menu-close" aria-label="Close navigation" onClick={() => setMenu(false)}>×</button></div>
+        <nav aria-label="Mobile navigation">{navigation.map(([label, href]) => <a href={href} key={href} aria-current={path === href ? 'page' : undefined}>{label}<Arrow /></a>)}</nav>
+        <div className="mobile-menu-access"><h2>Member access</h2><a href={carePortalUrl}>Customer login<Arrow /></a><a href={salesPortalUrl}>Agent login<Arrow /></a></div>
+        <details className="mobile-menu-policies"><summary>Policies<span className="chevron" aria-hidden="true" /></summary>{policies.map(([label, href]) => <a href={href} key={href}>{label}</a>)}</details>
+        <a className="mobile-menu-call" href={phoneUrl}>Call our team<span>{phone}</span></a>
+      </div>
+    </dialog>
   </header>;
 }
 
@@ -168,13 +195,14 @@ function Footer({ home = false }) {
 }
 
 export default function App() {
-  useEffect(() => { document.title = 'OPD & wellness memberships | SehatFirstPro'; }, []);
+  const { page, title } = path === '/' ? { page: <Home services={servicePages} />, title: 'OPD & wellness memberships' } : resolvePage(path, servicePages);
+  useEffect(() => { document.title = title + ' | SehatFirstPro'; }, [title]);
 
   return <div className="site-shell site-shell--home">
     <Cursor />
     <a href="#main" className="skip">Skip to content</a>
     <Header />
-    <main id="main" tabIndex={-1}><Home services={servicePages} /></main>
+    <main id="main" tabIndex={-1}>{page}</main>
     <Footer home />
   </div>;
 }
