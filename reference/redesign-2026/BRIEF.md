@@ -353,3 +353,23 @@ The three follow-up screenshots identify the existing phone hero, its pastel ico
 The user asks to apply the same cleanup to “What our members say” (image 2) and push that change. This instruction is separate from the appointment section, which is reserved for a local preview. Redesign the testimonial panel only in this production commit. Keep existing quotes, author names, portraits and manual navigation.
 
 ![Rejected member testimonial panel.](brief-images/rejected-member-panel.png)
+
+## Appointment section — local preview only
+
+> can we do it this section as well (imaeg 1)
+> for this (image 1) dont push it keep it local so i can view
+
+The testimonial update is pushed separately as 371f2a3. The appointment redesign is implemented only in the local working tree through JourneyPreview.jsx and journey-preview.css. Do not commit or push the appointment preview. See LOCAL-APPOINTMENT-PREVIEW.md for scope, files and checks.
+
+![Original appointment panels for local-only redesign.](brief-images/rejected-appointment-panels.png)
+
+## Appointment preview cancelled; share the approved navigation
+
+> Nahh undo those appointment section changes as before
+> also the hamburger menu in home page is good in mobile
+> Make sure every page uses that,
+> like othre pages use a advertisment banner at top + this dropdown hambuerger menu
+
+This instruction supersedes the local appointment-preview request above. Restore the original illustrated appointment panels and remove the local preview files. Do not recreate that preview. Use the approved homepage header/menu on every public route, replacing the legacy advertising strip and dropdown navigation shown below. Preserve non-home page bodies, footers, plan data, purchase destination and login targets. The current implementation and verification are documented in NAVIGATION.md.
+
+![Rejected legacy banner and mobile dropdown on another page.](brief-images/rejected-other-page-menu.png)
