@@ -14,7 +14,7 @@
       "2 Video Consultation - General Physician",
       "1 Dental Checkup & Consultation"
     ],
-    "eligibility": "Valid for individuals aged 18–85.",
+    "eligibility": "Valid for individuals aged 0–85.",
     "value_added_features": [
       "Unlimited Risk Assessment",
       "Unlimited Health Reminder",
@@ -43,7 +43,7 @@
       "1 Dental Checkup & Consultation",
       "1 Pet Health Video Consultation"
     ],
-    "eligibility": "Valid for individuals aged 18–85.",
+    "eligibility": "Valid for individuals aged 0–85.",
     "value_added_features": [
       "Unlimited Risk Assessment",
       "Unlimited Health Reminder",
@@ -73,7 +73,7 @@
       "2 Dental Checkup & Consultation",
       "2 Pet Health Video Consultation"
     ],
-    "eligibility": "Valid for individuals aged 18–85.",
+    "eligibility": "Valid for individuals aged 0–85.",
     "value_added_features": [
       "Risk Assessment",
       "Health Reminder",
@@ -103,7 +103,7 @@
       "2 Dental Checkup & Consultation",
       "2 Pet Health Video Consultation"
     ],
-    "eligibility": "Valid for individuals aged 18–85.",
+    "eligibility": "Ages 0–85. Children aged 0–35.",
     "value_added_features": [
       "Risk Assessment",
       "Health Reminder",
@@ -133,7 +133,7 @@
       "4 Dental Checkup & Consultation",
       "2 Pet Health Video Consultation"
     ],
-    "eligibility": "Valid for individuals aged upto 60 years",
+    "eligibility": "Ages 0–85. Children aged 0–35.",
     "value_added_features": [
       "Risk Assessment",
       "Health Reminder",
@@ -162,7 +162,7 @@
       "6 Consultations on In-person General Physician Clinic or Reimbursement upto ₹300 per Consultation for My Choice Doctor",
       "2 Dental Checkup & Consultation"
     ],
-    "eligibility": "Valid for individuals aged Above 60 years",
+    "eligibility": "Valid for individuals aged 60–85.",
     "value_added_features": [
       "Risk Assessment",
       "Health Reminder",
