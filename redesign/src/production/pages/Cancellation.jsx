@@ -115,10 +115,10 @@ const Cancellation = () => {
           <p >
             For cancellation or refund requests, please write to us at{" "}
             <a
-              href="mailto:support@sehatfirstpro.com"
+              href="mailto:support@sehatfirst.in"
               
             >
-              support@sehatfirstpro.com
+              support@sehatfirst.in
             </a>{" "}
             within the applicable window. Processing fees may apply for rider-based plans.
           </p>

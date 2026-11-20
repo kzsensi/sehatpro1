@@ -103,14 +103,14 @@ const SECTIONS = [
     items: [
       "sehatfirstpro may update Terms at any time by posting on the Website.",
       "Continued use constitutes acceptance of amended Terms.",
-      "If you have any questions about these terms, please contact us at support@sehatfirstpro.com",
+      "If you have any questions about these terms, please contact us at support@sehatfirst.in",
     ],
   },
   {
     title: "Grievance Redressal",
     intro: "In compliance with the Information Technology Act and DPDP Act, for any grievances, please contact our Grievance Officer:",
     items: [
-      <><strong>Email: </strong> support@sehatfirstpro.com</>,
+      <><strong>Email: </strong> support@sehatfirst.in</>,
       <><strong>Acknowledgment: </strong> Within 72 hours of working days.</>,
       <><strong>Resolution: </strong> Estimated Within 45-60 days.</>,
     ],

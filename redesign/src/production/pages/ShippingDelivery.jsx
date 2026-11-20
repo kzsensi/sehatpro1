@@ -98,10 +98,10 @@ const ShippingDelivery = () => {
           <p >
             For any shipping or delivery related queries, please reach out to us at{" "}
             <a
-              href="mailto:support@sehatfirstpro.com"
+              href="mailto:support@sehatfirst.in"
               
             >
-              support@sehatfirstpro.com
+              support@sehatfirst.in
             </a>
             . Our support team is available Mon–Sat, 9 AM – 6 PM IST.
           </p>

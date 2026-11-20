@@ -103,10 +103,10 @@ const PrivacyPolicy = () => {
           <p >
             For any privacy-related queries or data requests, please contact us at{" "}
             <a
-              href="mailto:support@sehatfirstpro.com"
+              href="mailto:support@sehatfirst.in"
               
             >
-              support@sehatfirstpro.com
+              support@sehatfirst.in
             </a>
             . Our team will respond within 72 business hours.
           </p>

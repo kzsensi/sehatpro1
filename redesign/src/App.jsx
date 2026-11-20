@@ -14,7 +14,7 @@ const localCarePortal = 'http://localhost:4173/app/';
 const localSalesPortal = 'http://localhost:4174/';
 const phone = '+91 9425005087';
 const phoneUrl = 'tel:+919425005087';
-const email = 'support@sehatfirstpro.com';
+const email = 'support@sehatfirst.in';
 const address = 'E-3/112, S-05, Sharda Complex, R.S. Nagar, Arera Colony, Bhopal, Madhya Pradesh 462039';
 
 const serviceScenes = [
